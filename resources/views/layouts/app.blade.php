@@ -135,7 +135,7 @@
     </div>
 
     <div class="mobile-nav__footer">
-      <span>PROVENANCE: Formerly Excellent Engineers · Pune</span>
+      <span>© {{ date('Y') }} Excellent Dry-Tech Pvt Ltd</span>
     </div>
   </div>
 
@@ -217,9 +217,6 @@
       <div class="footer-bottom">
         <div>
           © {{ date('Y') }} Excellent Dry-Tech Pvt Ltd. All Rights Reserved.
-        </div>
-        <div class="provenance-stamp">
-          <span>PROVENANCE:</span> Formerly Excellent Engineers · Pune, India
         </div>
       </div>
     </div>
