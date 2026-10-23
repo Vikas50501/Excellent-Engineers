@@ -150,21 +150,18 @@
           <!-- What Happens After You Enquire Mini-Process -->
           <div class="spec-plate-box">
             <div class="spec-plate-item" style="padding: 0.75rem 0;">
-              <span class="spec-plate-code">[ STEP 01 ]</span>
               <div class="spec-plate-text">
                 <h4 style="font-size: 0.95rem;">Direct Engineering Review</h4>
                 <p>Your enquiry reaches senior process engineers directly — no call center delays.</p>
               </div>
             </div>
             <div class="spec-plate-item" style="padding: 0.75rem 0;">
-              <span class="spec-plate-code">[ STEP 02 ]</span>
               <div class="spec-plate-text">
                 <h4 style="font-size: 0.95rem;">Technical Clarification</h4>
                 <p>We may call you to clarify feed moisture curves, viscosity, and utilities.</p>
               </div>
             </div>
             <div class="spec-plate-item" style="padding: 0.75rem 0;">
-              <span class="spec-plate-code">[ STEP 03 ]</span>
               <div class="spec-plate-text">
                 <h4 style="font-size: 0.95rem;">Budgetary Proposal</h4>
                 <p>You receive sizing, layout footprint, and formal budgetary pricing.</p>

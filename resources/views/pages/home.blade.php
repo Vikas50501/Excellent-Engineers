@@ -65,12 +65,12 @@
               <path d="M70,120 L160,120 L160,230 L230,230" stroke="#EF7F1A" stroke-width="2" fill="none" class="hero-svg-line"/>
               <path d="M230,230 L300,230 L300,340 L390,340" stroke="#3CA742" stroke-width="2" fill="none" class="hero-svg-line" style="animation-delay: 0.3s;"/>
               
-              <text x="75" y="112" fill="#e3edf7" font-family="monospace" font-size="10" letter-spacing="1">[ FEED INLET: 1,500 KG/HR ]</text>
-              <text x="245" y="222" fill="#EF7F1A" font-family="monospace" font-size="10" letter-spacing="1">[ THERMAL ZONE: 180°C ]</text>
-              <text x="250" y="356" fill="#3CA742" font-family="monospace" font-size="10" letter-spacing="1">[ CYCLONE DISCHARGE: 99.4% ]</text>
+              <text x="75" y="112" fill="#e3edf7" font-family="monospace" font-size="10" letter-spacing="1">FEED INLET: 1,500 KG/HR</text>
+              <text x="245" y="222" fill="#EF7F1A" font-family="monospace" font-size="10" letter-spacing="1">THERMAL ZONE: 180°C</text>
+              <text x="250" y="356" fill="#3CA742" font-family="monospace" font-size="10" letter-spacing="1">CYCLONE DISCHARGE: 99.4%</text>
             </svg>
           </div>
-          <div class="hero__visual-badge">[ FIG. 01 // CONTINUOUS PROCESS SCHEMATIC ]</div>
+          <div class="hero__visual-badge">FIG. 01 // CONTINUOUS PROCESS SCHEMATIC</div>
         </div>
       </div>
     </div>
@@ -137,7 +137,7 @@
             <img src="{{ asset('images/fabrication-workshop.jpg') }}" alt="Excellent Dry-Tech Heavy Engineering Fabrication Workshop in Moi, Pune" />
           </div>
           <div class="snapshot__caption">
-            <span>[ WORKS // MOI, KHED, PUNE ]</span>
+            <span>WORKS // MOI, KHED, PUNE</span>
             <span>PRESSURE VESSEL FABRICATION</span>
           </div>
         </div>
@@ -206,7 +206,6 @@
                 </svg>
               @endif
             </div>
-            <span class="section-num">[ {{ $fam['num'] }} ]</span>
             <h3 class="spec-sheet-card__title">{{ $fam['title'] }}</h3>
             <p class="spec-sheet-card__desc">{{ $fam['desc'] }}</p>
             <div class="spec-sheet-card__footer">
@@ -341,7 +340,6 @@
 
           <div class="spec-plate-box" style="margin-top: 1.75rem;">
             <div class="spec-plate-item">
-              <span class="spec-plate-code">[ MTC-100 ]</span>
               <div class="spec-plate-text">
                 <h4>Full Material Traceability</h4>
                 <p>100% Mill Test Certificates (MTC) logged for all product-contact and pressure-retaining stainless steel (SS 304, SS 316, 316L, Hastelloy).</p>
@@ -349,7 +347,6 @@
             </div>
 
             <div class="spec-plate-item">
-              <span class="spec-plate-code">[ ASME-IX ]</span>
               <div class="spec-plate-text">
                 <h4>Certified Coded Welding</h4>
                 <p>All structural and pressure welding performed by certified welders adhering strictly to ASME Section IX and IS manufacturing standards.</p>
@@ -357,7 +354,6 @@
             </div>
 
             <div class="spec-plate-item">
-              <span class="spec-plate-code">[ QC-TEST ]</span>
               <div class="spec-plate-text">
                 <h4>Non-Destructive &amp; Hydro Testing</h4>
                 <p>Dye-penetrant testing, digital ultrasonic thickness audits, hydrostatic testing at 1.5x design pressure, and air leak checks.</p>
@@ -365,7 +361,6 @@
             </div>
 
             <div class="spec-plate-item">
-              <span class="spec-plate-code">[ SAFE-01 ]</span>
               <div class="spec-plate-text">
                 <h4>Safety-First Mechanical Design</h4>
                 <p>Calibrated rupture discs, explosion vents, pressure relief valves, safety interlocks, and compliant maintenance access platforms built in.</p>
@@ -379,7 +374,7 @@
             <img src="{{ asset('images/quality-inspection.jpg') }}" alt="Quality Inspector Auditing Pressure Vessel Weld with Ultrasonic Testing" />
           </div>
           <div class="snapshot__caption">
-            <span>[ QA/QC VERIFICATION LAB ]</span>
+            <span>QA/QC VERIFICATION LAB</span>
             <span>ULTRASONIC WELD AUDIT</span>
           </div>
         </div>
@@ -444,10 +439,7 @@
       <div class="faq-accordion reveal">
         <div class="faq-item">
           <button class="faq-header" type="button" aria-expanded="false">
-            <div class="faq-header__left">
-              <span class="faq-tag">[ NOTE 01 ]</span>
-              <span class="faq-question">What industries do you supply equipment to?</span>
-            </div>
+            <span class="faq-question">What industries do you supply equipment to?</span>
             <span class="faq-icon">+</span>
           </button>
           <div class="faq-body">
@@ -457,10 +449,7 @@
 
         <div class="faq-item">
           <button class="faq-header" type="button" aria-expanded="false">
-            <div class="faq-header__left">
-              <span class="faq-tag">[ NOTE 02 ]</span>
-              <span class="faq-question">Do you offer turnkey projects or only standalone equipment?</span>
-            </div>
+            <span class="faq-question">Do you offer turnkey projects or only standalone equipment?</span>
             <span class="faq-icon">+</span>
           </button>
           <div class="faq-body">
@@ -470,10 +459,7 @@
 
         <div class="faq-item">
           <button class="faq-header" type="button" aria-expanded="false">
-            <div class="faq-header__left">
-              <span class="faq-tag">[ NOTE 03 ]</span>
-              <span class="faq-question">Can you customise equipment capacity to our exact process requirement?</span>
-            </div>
+            <span class="faq-question">Can you customise equipment capacity to our exact process requirement?</span>
             <span class="faq-icon">+</span>
           </button>
           <div class="faq-body">
@@ -483,10 +469,7 @@
 
         <div class="faq-item">
           <button class="faq-header" type="button" aria-expanded="false">
-            <div class="faq-header__left">
-              <span class="faq-tag">[ NOTE 04 ]</span>
-              <span class="faq-question">Do you provide ongoing after-sales maintenance and spares support?</span>
-            </div>
+            <span class="faq-question">Do you provide ongoing after-sales maintenance and spares support?</span>
             <span class="faq-icon">+</span>
           </button>
           <div class="faq-body">
@@ -496,10 +479,7 @@
 
         <div class="faq-item">
           <button class="faq-header" type="button" aria-expanded="false">
-            <div class="faq-header__left">
-              <span class="faq-tag">[ NOTE 05 ]</span>
-              <span class="faq-question">Where are your manufacturing works located, and can we visit?</span>
-            </div>
+            <span class="faq-question">Where are your manufacturing works located, and can we visit?</span>
             <span class="faq-icon">+</span>
           </button>
           <div class="faq-body">

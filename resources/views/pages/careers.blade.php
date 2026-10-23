@@ -42,7 +42,7 @@
             <img src="{{ asset('images/team-engineering.jpg') }}" alt="Excellent Dry-Tech Process Engineers Collaborating on Technical Plant Drawings" />
           </div>
           <div class="snapshot__caption">
-            <span>[ WORKS DESIGN DESK ]</span>
+            <span>WORKS DESIGN DESK</span>
             <span>ENGINEERING COLLABORATION</span>
           </div>
         </div>
@@ -61,10 +61,7 @@
       <div class="faq-accordion reveal">
         <div class="faq-item open">
           <button class="faq-header" type="button" aria-expanded="true">
-            <div class="faq-header__left">
-              <span class="faq-tag">[ DESIGN ]</span>
-              <span class="faq-question">Design Engineer – Mechanical / Process</span>
-            </div>
+            <span class="faq-question">Design Engineer – Mechanical / Process</span>
             <span class="faq-icon">+</span>
           </button>
           <div class="faq-body" style="max-height: 300px;">
@@ -76,10 +73,7 @@
 
         <div class="faq-item">
           <button class="faq-header" type="button" aria-expanded="false">
-            <div class="faq-header__left">
-              <span class="faq-tag">[ SITE ]</span>
-              <span class="faq-question">Site Supervisor / Erection &amp; Commissioning Engineer</span>
-            </div>
+            <span class="faq-question">Site Supervisor / Erection &amp; Commissioning Engineer</span>
             <span class="faq-icon">+</span>
           </button>
           <div class="faq-body">
@@ -91,10 +85,7 @@
 
         <div class="faq-item">
           <button class="faq-header" type="button" aria-expanded="false">
-            <div class="faq-header__left">
-              <span class="faq-tag">[ WORKS ]</span>
-              <span class="faq-question">Certified Fabrication Welder / Fitter (TIG / MIG)</span>
-            </div>
+            <span class="faq-question">Certified Fabrication Welder / Fitter (TIG / MIG)</span>
             <span class="faq-icon">+</span>
           </button>
           <div class="faq-body">
@@ -106,10 +97,7 @@
 
         <div class="faq-item">
           <button class="faq-header" type="button" aria-expanded="false">
-            <div class="faq-header__left">
-              <span class="faq-tag">[ SERVICE ]</span>
-              <span class="faq-question">Service &amp; Maintenance Engineer</span>
-            </div>
+            <span class="faq-question">Service &amp; Maintenance Engineer</span>
             <span class="faq-icon">+</span>
           </button>
           <div class="faq-body">

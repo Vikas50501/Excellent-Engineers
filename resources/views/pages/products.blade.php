@@ -45,8 +45,8 @@
                 <circle cx="80" cy="25" r="7" stroke="#EF7F1A" stroke-width="2"/>
                 <path d="M120,45 L155,45 L155,75 L140,110 L140,135 L130,135 L120,75 Z" fill="rgba(47,117,182,0.06)"/>
                 <line x1="80" y1="140" x2="80" y2="148" stroke="#3CA742" stroke-width="2"/>
-                <text x="35" y="16" fill="#7688A1" font-family="monospace" font-size="9">[ CHAMBER ]</text>
-                <text x="145" y="38" fill="#7688A1" font-family="monospace" font-size="9">[ CYCLONE ]</text>
+                <text x="35" y="16" fill="#7688A1" font-family="monospace" font-size="9">CHAMBER </text>
+                <text x="145" y="38" fill="#7688A1" font-family="monospace" font-size="9">CYCLONE </text>
               </svg>
             </div>
           </div>
@@ -107,7 +107,7 @@
                 <line x1="50" y1="85" x2="150" y2="85" stroke-dasharray="3 3"/>
                 <path d="M65,100 Q100,60 135,100" stroke="#EF7F1A" stroke-width="2"/>
                 <path d="M70,115 L70,85 M100,115 L100,85 M130,115 L130,85" stroke="#3CA742"/>
-                <text x="55" y="24" fill="#7688A1" font-family="monospace" font-size="9">[ EXPANSION CHAMBER ]</text>
+                <text x="55" y="24" fill="#7688A1" font-family="monospace" font-size="9">EXPANSION CHAMBER </text>
               </svg>
             </div>
           </div>
@@ -140,7 +140,7 @@
                 <path d="M50,135 L50,30 L110,30 L110,135" stroke-width="2"/>
                 <path d="M110,50 L155,50 L155,90 L140,120 L140,140 L125,140" fill="rgba(47,117,182,0.06)"/>
                 <circle cx="50" cy="115" r="8" fill="#EF7F1A"/>
-                <text x="15" y="118" fill="#7688A1" font-family="monospace" font-size="9">[ FEED ]</text>
+                <text x="15" y="118" fill="#7688A1" font-family="monospace" font-size="9">FEED </text>
               </svg>
             </div>
           </div>
@@ -172,7 +172,7 @@
                 <rect x="35" y="45" width="135" height="50" rx="3" transform="rotate(-6 100 70)" fill="rgba(14,87,148,0.06)"/>
                 <circle cx="65" cy="85" r="8" stroke="#EF7F1A"/>
                 <circle cx="140" cy="76" r="8" stroke="#EF7F1A"/>
-                <text x="45" y="32" fill="#7688A1" font-family="monospace" font-size="9">[ ROTATING DRUM ]</text>
+                <text x="45" y="32" fill="#7688A1" font-family="monospace" font-size="9">ROTATING DRUM </text>
               </svg>
             </div>
           </div>
@@ -209,8 +209,8 @@
                 <line x1="57" y1="20" x2="57" y2="115" stroke-dasharray="2 2"/>
                 <circle cx="120" cy="55" r="30" stroke="#3CA742" fill="rgba(60,167,66,0.06)"/>
                 <path d="M75,35 L90,35 M120,85 L120,135" stroke="#EF7F1A"/>
-                <text x="35" y="14" fill="#7688A1" font-family="monospace" font-size="9">[ CALANDRIA ]</text>
-                <text x="100" y="20" fill="#7688A1" font-family="monospace" font-size="9">[ VAPOR SEPARATOR ]</text>
+                <text x="35" y="14" fill="#7688A1" font-family="monospace" font-size="9">CALANDRIA </text>
+                <text x="100" y="20" fill="#7688A1" font-family="monospace" font-size="9">VAPOR SEPARATOR </text>
               </svg>
             </div>
           </div>
@@ -244,7 +244,7 @@
                 <line x1="60" y1="45" x2="100" y2="45" stroke="#3CA742"/>
                 <line x1="60" y1="75" x2="100" y2="75" stroke="#3CA742"/>
                 <line x1="60" y1="105" x2="100" y2="105" stroke="#3CA742"/>
-                <text x="40" y="18" fill="#7688A1" font-family="monospace" font-size="9">[ ROTOR ASSEMBLY ]</text>
+                <text x="40" y="18" fill="#7688A1" font-family="monospace" font-size="9">ROTOR ASSEMBLY </text>
               </svg>
             </div>
           </div>
@@ -277,7 +277,7 @@
                 <circle cx="115" cy="55" r="28" stroke="#0E5794"/>
                 <path d="M115,83 L115,125 L45,125 L45,105" stroke="#EF7F1A" stroke-width="2"/>
                 <circle cx="80" cy="125" r="9" stroke="#3CA742" fill="#fff"/>
-                <text x="68" y="142" fill="#7688A1" font-family="monospace" font-size="8">[ AXIAL PUMP ]</text>
+                <text x="68" y="142" fill="#7688A1" font-family="monospace" font-size="8">AXIAL PUMP </text>
               </svg>
             </div>
           </div>
@@ -314,8 +314,8 @@
                 <rect x="100" y="20" width="24" height="95" rx="2" fill="rgba(14,87,148,0.06)"/>
                 <rect x="140" y="25" width="22" height="90" rx="2" fill="rgba(14,87,148,0.06)"/>
                 <path d="M75,65 L100,65 M124,55 L140,55" stroke="#EF7F1A"/>
-                <text x="25" y="24" fill="#7688A1" font-family="monospace" font-size="8">[ FERMENTER ]</text>
-                <text x="95" y="14" fill="#7688A1" font-family="monospace" font-size="8">[ WASH / RECTIFIER ]</text>
+                <text x="25" y="24" fill="#7688A1" font-family="monospace" font-size="8">FERMENTER </text>
+                <text x="95" y="14" fill="#7688A1" font-family="monospace" font-size="8">WASH / RECTIFIER </text>
               </svg>
             </div>
           </div>
@@ -349,7 +349,7 @@
                 <rect x="115" y="30" width="22" height="80" rx="2"/>
                 <rect x="155" y="45" width="35" height="55" rx="2" stroke="#3CA742" fill="rgba(60,167,66,0.06)"/>
                 <path d="M60,65 L75,65 M97,60 L115,60 M137,65 L155,65" stroke="#EF7F1A"/>
-                <text x="150" y="35" fill="#3CA742" font-family="monospace" font-size="8">[ MSDU DEHYDRATION ]</text>
+                <text x="150" y="35" fill="#3CA742" font-family="monospace" font-size="8">MSDU DEHYDRATION </text>
               </svg>
             </div>
           </div>

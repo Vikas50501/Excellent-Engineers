@@ -191,37 +191,31 @@
 
       <div class="product-preview-grid">
         <div class="spec-sheet-card reveal">
-          <span class="section-num">[ PART // 01 ]</span>
           <h3 class="spec-sheet-card__title">Atomizers &amp; Nozzles</h3>
           <p class="spec-sheet-card__desc">Rotary atomizer wheels, tungsten carbide nozzle inserts, swirl chambers, and balanced high-speed spindle assemblies for Spray Dryers.</p>
         </div>
 
         <div class="spec-sheet-card reveal stagger-1">
-          <span class="section-num">[ PART // 02 ]</span>
           <h3 class="spec-sheet-card__title">Scraper Blades &amp; Rotors</h3>
           <p class="spec-sheet-card__desc">PTFE, PEEK, and stainless scraper blade inserts, springs, and precision dynamic-balanced drive shafts for Scraped Surface Evaporators.</p>
         </div>
 
         <div class="spec-sheet-card reveal stagger-2">
-          <span class="section-num">[ PART // 03 ]</span>
           <h3 class="spec-sheet-card__title">Circulation Pumps &amp; Seals</h3>
           <p class="spec-sheet-card__desc">Axial flow impellers, high-temperature silicon carbide mechanical seals, and shaft sleeves for Forced Circulation Evaporators.</p>
         </div>
 
         <div class="spec-sheet-card reveal">
-          <span class="section-num">[ PART // 04 ]</span>
           <h3 class="spec-sheet-card__title">Tubes &amp; Sanitary Gaskets</h3>
           <p class="spec-sheet-card__desc">SS 304/316 seamless heat transfer tubes, EPDM/Viton/PTFE food-grade sanitary gaskets, and expanded tube ferrules.</p>
         </div>
 
         <div class="spec-sheet-card reveal stagger-1">
-          <span class="section-num">[ PART // 05 ]</span>
           <h3 class="spec-sheet-card__title">Filtration &amp; Cyclones</h3>
           <p class="spec-sheet-card__desc">Anti-static PTFE membrane filter bags, cage retainers, pulse-jet solenoid valves, and wear-resistant cyclone cone liners.</p>
         </div>
 
         <div class="spec-sheet-card reveal stagger-2">
-          <span class="section-num">[ PART // 06 ]</span>
           <h3 class="spec-sheet-card__title">Sensors &amp; Instrumentation</h3>
           <p class="spec-sheet-card__desc">RTD PT-100 temperature sensors, differential pressure transmitters, flame sensors, and safety interlock relays.</p>
         </div>

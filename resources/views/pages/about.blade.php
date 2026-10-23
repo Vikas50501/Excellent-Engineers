@@ -37,7 +37,6 @@
           <div class="about-timeline-item reveal">
             <div class="about-timeline-dot">01</div>
             <div class="about-timeline-content">
-              <span class="section-num">[ THE GENESIS ]</span>
               <h3>Founding of Excellent Engineers — Moi, Pune</h3>
               <p class="text-muted">
                 Established with dedicated fabrication works at Gat No. 607, Moi, Pune. Specialized in custom spray drying chambers and cyclone separators for regional agro-chemical and food clients, establishing our reputation for thermal precision and robust welding.
@@ -48,7 +47,6 @@
           <div class="about-timeline-item reveal stagger-1">
             <div class="about-timeline-dot">02</div>
             <div class="about-timeline-content">
-              <span class="section-num">[ TECHNICAL EXPANSION ]</span>
               <h3>Advancing into Evaporation &amp; Turnkey Bio-Tech</h3>
               <p class="text-muted">
                 Engineered multi-effect falling film and forced circulation evaporation plants with TVR recompression, followed by turnkey continuous distillation systems for fuel-grade bio-ethanol producers across Maharashtra, Gujarat, and South India.
@@ -59,7 +57,6 @@
           <div class="about-timeline-item reveal stagger-2">
             <div class="about-timeline-dot">03</div>
             <div class="about-timeline-content">
-              <span class="section-num">[ EXCELLENT DRY-TECH PVT LTD ]</span>
               <h3>Incorporation as Excellent Dry-Tech Pvt Ltd</h3>
               <p class="text-muted">
                 Formalized company structure to handle larger turnkey engineering contracts, ASME-code heavy stainless steel fabrication, automated PLC control integration, and a pan-India dedicated maintenance service network.
@@ -102,7 +99,6 @@
 
       <div class="spec-plate-box reveal">
         <div class="spec-plate-item">
-          <span class="spec-plate-code">[ VAL // 01 ]</span>
           <div class="spec-plate-text">
             <h4>Engineering Integrity</h4>
             <p>Every design is rigorously calculated, documented and validated on paper before fabrication begins. No guesswork, no cutting corners on design margins.</p>
@@ -110,7 +106,6 @@
         </div>
 
         <div class="spec-plate-item">
-          <span class="spec-plate-code">[ VAL // 02 ]</span>
           <div class="spec-plate-text">
             <h4>Customer-First Execution</h4>
             <p>We engineer around your product feed rheology, your available floor footprint, and your capital budget — not catalogue standards forced to fit.</p>
@@ -118,7 +113,6 @@
         </div>
 
         <div class="spec-plate-item">
-          <span class="spec-plate-code">[ VAL // 03 ]</span>
           <div class="spec-plate-text">
             <h4>Quality Without Shortcuts</h4>
             <p>100% material traceability (MTC), qualified ASME Section IX welders, and strict hydrostatic, pneumatic, and dye-penetrant testing on every single unit.</p>
@@ -126,7 +120,6 @@
         </div>
 
         <div class="spec-plate-item">
-          <span class="spec-plate-code">[ VAL // 04 ]</span>
           <div class="spec-plate-text">
             <h4>Long-Term Partnership</h4>
             <p>Our client relationship begins in earnest only after commissioning, sustained through preventive maintenance contracts, process audits, and immediate genuine spares supply.</p>
@@ -146,7 +139,6 @@
 
       <div class="product-preview-grid">
         <div class="spec-sheet-card reveal">
-          <span class="section-num">[ PILLAR // 01 ]</span>
           <h3 class="spec-sheet-card__title">Process-First Design</h3>
           <p class="spec-sheet-card__desc">
             We start from your material’s drying kinetics, heat sensitivity, and foaming behavior — selecting the right atomization or tube velocity before drawing shell geometry.
@@ -154,7 +146,6 @@
         </div>
 
         <div class="spec-sheet-card reveal stagger-1">
-          <span class="section-num">[ PILLAR // 02 ]</span>
           <h3 class="spec-sheet-card__title">In-House Fabrication</h3>
           <p class="spec-sheet-card__desc">
             Full control over welding quality, rolling accuracy, surface finishing (up to 0.4 Ra for pharma), and delivery schedules without relying on third-party job shops.
@@ -162,7 +153,6 @@
         </div>
 
         <div class="spec-sheet-card reveal stagger-2">
-          <span class="section-num">[ PILLAR // 03 ]</span>
           <h3 class="spec-sheet-card__title">Single Accountable Team</h3>
           <p class="spec-sheet-card__desc">
             The same senior engineers who design your plant oversee trial runs on your floor. You are never handed off between disconnected sales desks and field crews.
@@ -231,7 +221,7 @@
             <img src="{{ asset('images/team-engineering.jpg') }}" alt="Excellent Dry-Tech Engineering Team Reviewing P&amp;ID Blueprints" />
           </div>
           <div class="snapshot__caption">
-            <span>[ WORKS DESIGN OFFICE ]</span>
+            <span>WORKS DESIGN OFFICE</span>
             <span>P&amp;ID &amp; MECHANICAL VALIDATION</span>
           </div>
         </div>
@@ -249,35 +239,30 @@
 
       <div class="spec-plate-box reveal">
         <div class="spec-plate-item">
-          <span class="spec-plate-code">[ 01 ]</span>
           <div class="spec-plate-text">
             <h4>Single Point of Responsibility</h4>
             <p>From initial feed testing and thermal balance calculations to fabrication, civil interface, erection, and final commissioning — one accountable team.</p>
           </div>
         </div>
         <div class="spec-plate-item">
-          <span class="spec-plate-code">[ 02 ]</span>
           <div class="spec-plate-text">
             <h4>Engineered Around Your Material</h4>
             <p>Equipment sized specifically for your feed’s particle size target, moisture curve, viscosity, and heat sensitivity — never an off-the-shelf catalog compromise.</p>
           </div>
         </div>
         <div class="spec-plate-item">
-          <span class="spec-plate-code">[ 03 ]</span>
           <div class="spec-plate-text">
             <h4>In-House Fabrication Control</h4>
             <p>Rigorous stage-wise quality checks, material traceability, and documented welding qualifications under our direct supervision in Pune.</p>
           </div>
         </div>
         <div class="spec-plate-item">
-          <span class="spec-plate-code">[ 04 ]</span>
           <div class="spec-plate-text">
             <h4>Transparent Project Timelines</h4>
             <p>Clear engineering milestones, realistic delivery scheduling, and disciplined project governance with budgetary transparency from day one.</p>
           </div>
         </div>
         <div class="spec-plate-item">
-          <span class="spec-plate-code">[ 05 ]</span>
           <div class="spec-plate-text">
             <h4>Lifetime Service &amp; Spares Continuity</h4>
             <p>Preventive maintenance contracts, performance optimization audits, and direct access to genuine spares whenever you expand or service.</p>

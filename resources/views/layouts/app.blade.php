@@ -34,7 +34,7 @@
     <div class="overlay-grid"></div>
     <div class="overlay-content">
       <img src="{{ asset('images/logo.png') }}" alt="Excellent Dry-Tech Pvt Ltd" />
-      <span class="overlay-tag">[ SYSTEM // INITIALIZING BLUEPRINT DATA ]</span>
+      <span class="overlay-tag">INITIALIZING BLUEPRINT DATA</span>
     </div>
     <div class="overlay-progress"></div>
   </div>
