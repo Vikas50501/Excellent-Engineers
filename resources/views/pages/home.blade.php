@@ -39,6 +39,21 @@
               <span class="hero-slide-tab__quote">“From Fermentation to Fuel-Grade Ethanol — End-to-End Plants.”</span>
             </button>
           </div>
+
+          <!-- Hero Slide Navigation Footer with Next & Prev Controls -->
+          <div class="hero-nav-footer">
+            <span class="hero-nav-status">AUTOMATED PROCESS ROTATION &bull; 03 DISCIPLINES</span>
+            <div class="hero-nav-arrows">
+              <button class="hero-arrow-btn hero-arrow-btn--prev" type="button" aria-label="Previous Equipment Slide">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                <span>Prev</span>
+              </button>
+              <button class="hero-arrow-btn hero-arrow-btn--next" type="button" aria-label="Next Equipment Slide">
+                <span>Next</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+            </div>
+          </div>
         </div>
 
         <!-- Hero Right: Clean Real Photography Visual Panel with Corner Framing -->
@@ -63,6 +78,23 @@
               <img src="{{ asset('images/fermentation-distillery.jpg') }}" alt="Bio-Technology Fermentation and Distillation Plant" class="hero-visual-img" />
               <div class="hero-visual-overlay"></div>
               <div class="hero-visual-grid"></div>
+            </div>
+          </div>
+
+          <!-- Hero Floating Navigation Controls & Next Button on Image -->
+          <div class="hero-visual-controls">
+            <div class="hero-visual-counter">
+              <span class="hero-counter-current">SYSTEM // 01</span>
+              <span class="hero-counter-total">/ 03</span>
+            </div>
+            <div class="hero-visual-btn-group">
+              <button class="hero-visual-btn hero-btn-prev" type="button" aria-label="Previous Equipment System">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+              </button>
+              <button class="hero-visual-btn hero-btn-next" type="button" aria-label="Next Equipment System">
+                <span>Next</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
             </div>
           </div>
         </div>

@@ -124,6 +124,17 @@
     let currentIndex = 0;
     let timer = null;
 
+    const prevBtns = qsa('.hero-arrow-btn--prev, .hero-btn-prev');
+    const nextBtns = qsa('.hero-arrow-btn--next, .hero-btn-next');
+    const counterCurEls = qsa('.hero-counter-current');
+
+    const updateCounter = (idx) => {
+      const num = String(idx + 1).padStart(2, '0');
+      counterCurEls.forEach(el => {
+        el.textContent = `SYSTEM // ${num}`;
+      });
+    };
+
     const showSlide = (idx) => {
       // Update tabs (all have white background and borders, active has highlighted border)
       tabs.forEach((t, i) => {
@@ -138,6 +149,9 @@
           s.classList.toggle('active', i === idx);
         });
       }
+
+      // Update counter badge
+      updateCounter(idx);
 
       // Smoothly cross-fade text
       const data = slidesData[idx];
@@ -165,6 +179,10 @@
       showSlide((currentIndex + 1) % tabs.length);
     };
 
+    const prevSlide = () => {
+      showSlide((currentIndex - 1 + tabs.length) % tabs.length);
+    };
+
     const startAutoSlider = () => {
       clearInterval(timer);
       timer = setInterval(nextSlide, 4500);
@@ -174,6 +192,24 @@
     tabs.forEach((tab, i) => {
       tab.addEventListener('click', () => {
         showSlide(i);
+        startAutoSlider();
+      });
+    });
+
+    // Next button handlers
+    nextBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        nextSlide();
+        startAutoSlider();
+      });
+    });
+
+    // Prev button handlers
+    prevBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        prevSlide();
         startAutoSlider();
       });
     });
@@ -188,7 +224,8 @@
       });
     }
 
-    // Start auto slider immediately
+    // Initialize counter and start auto slider immediately
+    updateCounter(0);
     startAutoSlider();
   }
 
