@@ -1,0 +1,10 @@
+.git
+.github
+.phpunit.result.cache
+scratch
+tests
+node_modules
+static_backup
+.env
+.env.backup
+.phpunit.cache

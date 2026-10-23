@@ -1,0 +1,74 @@
+/* ============================================================
+   EXCELLENT DRY-TECH — Typography & Local Font-Face
+   Guaranteed Offline & High-Speed Rendering
+   ============================================================ */
+
+/* --- General Sans (Fontshare) --- */
+@font-face {
+  font-family: 'General Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/general-sans-0.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'General Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../fonts/general-sans-1.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'General Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('../fonts/general-sans-2.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'General Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/general-sans-3.woff2') format('woff2');
+}
+
+/* --- Fraunces (Google Fonts) --- */
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('../fonts/fraunces-1.woff2') format('woff2'),
+       url('../fonts/fraunces-2.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Fraunces';
+  font-style: italic;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('../fonts/fraunces-0.woff2') format('woff2');
+}
+
+/* --- IBM Plex Mono --- */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/ibm-plex-mono-0.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../fonts/ibm-plex-mono-1.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('../fonts/ibm-plex-mono-2.woff2') format('woff2');
+}
