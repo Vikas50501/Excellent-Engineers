@@ -121,7 +121,7 @@
 
         @if(session('success'))
           <div style="background: rgba(60, 167, 66, 0.12); border: 1px solid var(--green); padding: 1.25rem; border-radius: 2px; margin-bottom: 1.5rem; color: #1e6922; font-weight: 500;">
-            ✓ {{ session('success') }}
+            {{ session('success') }}
           </div>
         @endif
 

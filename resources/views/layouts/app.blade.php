@@ -121,15 +121,15 @@
     <div class="mobile-nav__contact">
       <div class="mobile-nav__contact-heading">Direct Contact &amp; Works</div>
       <a href="tel:+919922754848" class="mobile-contact-row">
-        <span class="contact-pill-icon">📞</span>
+        
         <span>+91 99227 54848 / 99226 54848</span>
       </a>
       <a href="mailto:excellentengineers.sr@gmail.com" class="mobile-contact-row">
-        <span class="contact-pill-icon">✉️</span>
+        
         <span>excellentengineers.sr@gmail.com</span>
       </a>
       <div class="mobile-contact-row">
-        <span class="contact-pill-icon">📍</span>
+        
         <span>Gat No. 607, Nighoje–Moi Road, At. Moi, Pune – 410501</span>
       </div>
     </div>
@@ -197,21 +197,18 @@
         <div class="footer-col">
           <h4>Works &amp; Office</h4>
           <div class="footer-contact-item">
-            <span>📍</span>
             <span>Gat No. 607, Nighoje–Moi Road, At. Moi, Post. Kurli, Tal. Khed, Dist. Pune – 410501, Maharashtra, India</span>
           </div>
           <div class="footer-contact-item">
-            <span>📞</span>
             <span><a href="tel:+919922754848" style="color: inherit;">+91 99227 54848</a> / <a href="tel:+919922654848" style="color: inherit;">+91 99226 54848</a></span>
           </div>
           <div class="footer-contact-item">
-            <span>✉️</span>
             <span><a href="mailto:excellentengineers.sr@gmail.com" style="color: inherit;">excellentengineers.sr@gmail.com</a></span>
           </div>
 
           <div class="social-links" aria-label="Social media channels">
             <a href="https://facebook.com" class="social-icon-btn" aria-label="Facebook" target="_blank" rel="noopener">f</a>
-            <a href="https://twitter.com" class="social-icon-btn" aria-label="Twitter / X" target="_blank" rel="noopener">𝕏</a>
+            <a href="https://twitter.com" class="social-icon-btn" aria-label="Twitter / X" target="_blank" rel="noopener">X</a>
             <a href="https://google.com" class="social-icon-btn" aria-label="Google Business" target="_blank" rel="noopener">G</a>
           </div>
         </div>

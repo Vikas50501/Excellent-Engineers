@@ -76,17 +76,17 @@
   <section class="trust-strip blueprint-bg--dark" aria-label="Trust Attributes">
     <div class="trust-marquee">
       <div class="trust-marquee__track">
-        <span class="trust-point"><span class="trust-point__glyph">✦</span> Custom-Engineered Equipment — not off-the-shelf</span>
+        <span class="trust-point">Custom-Engineered Equipment — not off-the-shelf</span>
         <span class="trust-divider"></span>
-        <span class="trust-point"><span class="trust-point__glyph">✦</span> In-House Design, Fabrication &amp; Commissioning</span>
+        <span class="trust-point">In-House Design, Fabrication &amp; Commissioning</span>
         <span class="trust-divider"></span>
-        <span class="trust-point"><span class="trust-point__glyph">✦</span> Pan-India Installation &amp; Service Network</span>
+        <span class="trust-point">Pan-India Installation &amp; Service Network</span>
         <span class="trust-divider"></span>
-        <span class="trust-point"><span class="trust-point__glyph">✦</span> Dedicated After-Sales &amp; Maintenance Support</span>
+        <span class="trust-point">Dedicated After-Sales &amp; Maintenance Support</span>
         <span class="trust-divider"></span>
-        <span class="trust-point"><span class="trust-point__glyph">✦</span> ASME Section IX &amp; IS Compliant Fabrication</span>
+        <span class="trust-point">ASME Section IX &amp; IS Compliant Fabrication</span>
         <span class="trust-divider"></span>
-        <span class="trust-point"><span class="trust-point__glyph">✦</span> Gat No. 607, Moi Works, Khed, Pune</span>
+        <span class="trust-point">Gat No. 607, Moi Works, Khed, Pune</span>
       </div>
     </div>
   </section>

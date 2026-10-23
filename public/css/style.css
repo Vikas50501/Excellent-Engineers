@@ -355,14 +355,14 @@ p:last-child { margin-bottom: 0; }
 }
 
 /* ============================================================
-   7. DUOTONE REAL PHOTOGRAPHY TREATMENT
+   7. REAL PHOTOGRAPHY TREATMENT (Crisp, High Dynamic Range, Clean)
    ============================================================ */
 .duotone-photo {
   position: relative;
   overflow: hidden;
-  background-color: var(--blue-deep);
+  background-color: #0c1521;
   border: 1px solid var(--steel);
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
 .duotone-photo img {
@@ -370,8 +370,7 @@ p:last-child { margin-bottom: 0; }
   height: 100%;
   object-fit: cover;
   display: block;
-  filter: grayscale(100%) contrast(115%) brightness(95%);
-  mix-blend-mode: multiply;
+  filter: contrast(106%) brightness(98%);
   transition: transform 0.6s var(--ease-expo), filter 0.6s var(--ease-expo);
 }
 
@@ -379,16 +378,14 @@ p:last-child { margin-bottom: 0; }
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(14, 87, 148, 0.75) 0%, rgba(47, 117, 182, 0.6) 60%, rgba(246, 244, 239, 0.25) 100%);
-  mix-blend-mode: screen;
+  background: linear-gradient(180deg, transparent 65%, rgba(16, 21, 28, 0.45) 100%);
   pointer-events: none;
   z-index: 1;
-  transition: opacity 0.4s ease;
 }
 
 .duotone-photo:hover img {
   transform: scale(1.03);
-  filter: grayscale(20%) contrast(105%) brightness(100%);
+  filter: contrast(108%) brightness(102%);
 }
 
 .crop-marks {
@@ -930,8 +927,7 @@ body.nav-open {
   height: 100%;
   object-fit: cover;
   display: block;
-  filter: grayscale(100%) contrast(120%) brightness(92%);
-  mix-blend-mode: multiply;
+  filter: contrast(106%) brightness(98%);
   transition: transform 0.6s var(--ease-expo);
 }
 
@@ -942,9 +938,7 @@ body.nav-open {
 .hero-visual-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(14, 87, 148, 0.78) 0%, rgba(47, 117, 182, 0.6) 65%, rgba(246, 244, 239, 0.2) 100%),
-              radial-gradient(circle at center, transparent 35%, rgba(16, 21, 28, 0.65) 100%);
-  mix-blend-mode: screen;
+  background: linear-gradient(180deg, transparent 70%, rgba(16, 21, 28, 0.45) 100%);
   pointer-events: none;
 }
 
@@ -2143,7 +2137,7 @@ body.nav-open {
 .footer {
   background-color: var(--ink);
   color: var(--white);
-  padding: 4.5rem 0 1.75rem;
+  padding: 2.75rem 0 1.25rem;
   border-top: 1px solid rgba(118, 136, 161, 0.25);
   position: relative;
 }
@@ -2164,16 +2158,16 @@ body.nav-open {
 .footer-grid {
   display: grid;
   grid-template-columns: 2fr 1fr 1.2fr 1.5fr;
-  gap: 3rem;
-  margin-bottom: 3rem;
+  gap: 2.25rem;
+  margin-bottom: 2rem;
 }
 
 .footer-col h4 {
   color: var(--white);
-  font-size: 1.05rem;
-  margin-bottom: 1.25rem;
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
   position: relative;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.35rem;
 }
 .footer-col h4::after {
   content: '';
@@ -2207,7 +2201,7 @@ body.nav-open {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
+  gap: 0.38rem;
 }
 .footer-links a {
   color: #bfd4ea;
@@ -2355,10 +2349,21 @@ img, svg, video, iframe {
     top: var(--nav-h);
   }
 
-  /* Two-column major sections stack */
+  /* Mobile hero: image FIRST, content SECOND */
   .hero__inner {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+  }
+  .hero__visual {
+    order: 1; /* Shows FIRST on mobile! */
+    max-width: 480px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .hero__content {
+    order: 2; /* Shows SECOND on mobile! */
+    width: 100%;
   }
   .hero__visual {
     max-width: 480px;
@@ -2550,13 +2555,20 @@ img, svg, video, iframe {
     min-width: 480px;
   }
 
-  /* Footer */
+  /* Compact Mobile Footer */
   .footer {
-    padding: 3rem 0 1.5rem;
+    padding: 1.85rem 0 1rem;
   }
   .footer-grid {
-    grid-template-columns: 1fr;
-    gap: 2.25rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+  .footer-grid > .footer-col:first-child {
+    grid-column: 1 / -1;
+  }
+  .footer-grid > .footer-col:last-child {
+    grid-column: 1 / -1;
   }
   .footer-bottom {
     flex-direction: column;

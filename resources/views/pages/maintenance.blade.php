@@ -52,7 +52,7 @@
 
       <div class="checklist-grid">
         <div class="checklist-box reveal">
-          <span class="checklist-icon">✓</span>
+          <span class="checklist-icon"></span>
           <div>
             <h4>Preventive Maintenance Contracts (AMC)</h4>
             <p class="text-muted">Scheduled periodic inspection, dynamic balancing, mechanical seal renewal, calibration, and cleaning visits.</p>
@@ -60,7 +60,7 @@
         </div>
 
         <div class="checklist-box reveal stagger-1">
-          <span class="checklist-icon">✓</span>
+          <span class="checklist-icon"></span>
           <div>
             <h4>Rapid Breakdown Support</h4>
             <p class="text-muted">Fast-response troubleshooting and on-site emergency repair crews deployed anywhere across India.</p>
@@ -68,7 +68,7 @@
         </div>
 
         <div class="checklist-box reveal stagger-2">
-          <span class="checklist-icon">✓</span>
+          <span class="checklist-icon"></span>
           <div>
             <h4>Genuine OEM Spares Supply</h4>
             <p class="text-muted">High-precision replacement nozzles, rotary discs, scraper assemblies, mechanical seals, and heat transfer tubes.</p>
@@ -76,7 +76,7 @@
         </div>
 
         <div class="checklist-box reveal stagger-3">
-          <span class="checklist-icon">✓</span>
+          <span class="checklist-icon"></span>
           <div>
             <h4>Performance &amp; Energy Audits</h4>
             <p class="text-muted">Efficiency validation against original design mass-energy balances, with a corrective action engineering report.</p>
@@ -84,7 +84,7 @@
         </div>
 
         <div class="checklist-box reveal stagger-1">
-          <span class="checklist-icon">✓</span>
+          <span class="checklist-icon"></span>
           <div>
             <h4>Operator Training &amp; Refresher Sessions</h4>
             <p class="text-muted">In-depth SOP operational training for new plant operators, safety practices, and recipe changeovers.</p>
@@ -92,7 +92,7 @@
         </div>
 
         <div class="checklist-box reveal stagger-2">
-          <span class="checklist-icon">✓</span>
+          <span class="checklist-icon"></span>
           <div>
             <h4>Retrofit &amp; Capacity Upgrade Support</h4>
             <p class="text-muted">Throughput debottlenecking, automation retrofits, PLC logic upgrades, and adding TVR thermal recompression stages.</p>

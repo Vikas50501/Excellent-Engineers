@@ -28,7 +28,7 @@
 
           @if(session('success'))
             <div style="background: rgba(60, 167, 66, 0.12); border: 1px solid var(--green); padding: 1.25rem; border-radius: 2px; margin-bottom: 1.5rem; color: #1e6922; font-weight: 500;">
-              ✓ {{ session('success') }}
+              {{ session('success') }}
             </div>
           @endif
 
@@ -107,7 +107,7 @@
             <p style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--steel); margin-bottom: 1.5rem;">Formerly Excellent Engineers</p>
 
             <div class="contact-meta-item">
-              <span class="contact-meta-icon">👤</span>
+              
               <div>
                 <div style="font-size: 0.8125rem; font-family: var(--font-mono); color: var(--steel);">MANAGING DIRECTOR</div>
                 <div style="font-weight: 600; color: var(--ink);">Mr. Santosh Maurya</div>
@@ -115,7 +115,7 @@
             </div>
 
             <div class="contact-meta-item">
-              <span class="contact-meta-icon">📍</span>
+              
               <div>
                 <div style="font-size: 0.8125rem; font-family: var(--font-mono); color: var(--steel);">REGISTERED WORKS &amp; OFFICE</div>
                 <div style="color: var(--ink); line-height: 1.5;">Gat No. 607, Nighoje–Moi Road, At. Moi, Post. Kurli, Tal. Khed, Dist. Pune – 410501, Maharashtra, India</div>
@@ -123,7 +123,7 @@
             </div>
 
             <div class="contact-meta-item">
-              <span class="contact-meta-icon">📞</span>
+              
               <div>
                 <div style="font-size: 0.8125rem; font-family: var(--font-mono); color: var(--steel);">DIRECT PHONES</div>
                 <div><a href="tel:+919922754848" style="font-weight: 600; color: var(--blue-deep);">+91 99227 54848</a> / <a href="tel:+919922654848" style="font-weight: 600; color: var(--blue-deep);">+91 99226 54848</a></div>
@@ -131,7 +131,7 @@
             </div>
 
             <div class="contact-meta-item">
-              <span class="contact-meta-icon">✉️</span>
+              
               <div>
                 <div style="font-size: 0.8125rem; font-family: var(--font-mono); color: var(--steel);">OFFICIAL EMAIL</div>
                 <div><a href="mailto:excellentengineers.sr@gmail.com" style="font-weight: 600; color: var(--blue-deep);">excellentengineers.sr@gmail.com</a></div>
@@ -139,7 +139,7 @@
             </div>
 
             <div class="contact-meta-item">
-              <span class="contact-meta-icon">⏱️</span>
+              
               <div>
                 <div style="font-size: 0.8125rem; font-family: var(--font-mono); color: var(--steel);">OPERATING HOURS</div>
                 <div>Monday – Saturday, 9:00 AM – 6:30 PM IST (Site visits by appointment)</div>
