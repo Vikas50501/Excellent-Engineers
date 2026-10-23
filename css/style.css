@@ -1106,18 +1106,10 @@ body.nav-open {
 .hero-nav-footer {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   margin-top: 0.85rem;
-  padding-top: 0.75rem;
-  border-top: 1px dashed rgba(118, 136, 161, 0.25);
-  gap: 0.75rem;
-}
-
-.hero-nav-status {
-  font-family: var(--font-mono);
-  font-size: 0.6875rem;
-  color: var(--steel);
-  letter-spacing: 0.06em;
+  padding-top: 0.6rem;
+  gap: 0.5rem;
 }
 
 .hero-nav-arrows {
@@ -1162,84 +1154,6 @@ body.nav-open {
   background: #d86d10;
   border-color: #d86d10;
   color: #fff;
-}
-
-/* Floating Controls on Hero Visual Image */
-.hero-visual-controls {
-  position: absolute;
-  bottom: 14px;
-  left: 14px;
-  right: 14px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 10;
-  pointer-events: none;
-  gap: 0.5rem;
-}
-
-.hero-visual-counter {
-  background: rgba(14, 87, 148, 0.92);
-  backdrop-filter: blur(8px);
-  color: #ffffff;
-  font-family: var(--font-mono);
-  font-size: 0.6875rem;
-  letter-spacing: 0.08em;
-  padding: 0.35rem 0.7rem;
-  border-radius: 2px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-  pointer-events: auto;
-  white-space: nowrap;
-}
-
-.hero-counter-total {
-  color: rgba(255, 255, 255, 0.65);
-}
-
-.hero-visual-btn-group {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  pointer-events: auto;
-}
-
-.hero-visual-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.35rem;
-  background: rgba(16, 21, 28, 0.85);
-  backdrop-filter: blur(8px);
-  color: #ffffff;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  font-weight: 600;
-  padding: 0.38rem 0.75rem;
-  border-radius: 2px;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  user-select: none;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
-
-.hero-visual-btn:hover {
-  background: var(--blue-bright);
-  border-color: var(--blue-bright);
-  transform: translateY(-1px);
-}
-
-.hero-visual-btn.hero-btn-next {
-  background: var(--orange);
-  border-color: var(--orange);
-  color: #ffffff;
-  padding: 0.38rem 0.95rem;
-}
-
-.hero-visual-btn.hero-btn-next:hover {
-  background: #d86d10;
-  border-color: #d86d10;
 }
 
 /* ============================================================

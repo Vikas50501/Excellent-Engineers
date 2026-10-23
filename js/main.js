@@ -124,16 +124,8 @@
     let currentIndex = 0;
     let timer = null;
 
-    const prevBtns = qsa('.hero-arrow-btn--prev, .hero-btn-prev');
-    const nextBtns = qsa('.hero-arrow-btn--next, .hero-btn-next');
-    const counterCurEls = qsa('.hero-counter-current');
-
-    const updateCounter = (idx) => {
-      const num = String(idx + 1).padStart(2, '0');
-      counterCurEls.forEach(el => {
-        el.textContent = `SYSTEM // ${num}`;
-      });
-    };
+    const prevBtns = qsa('.hero-arrow-btn--prev');
+    const nextBtns = qsa('.hero-arrow-btn--next');
 
     const showSlide = (idx) => {
       // Update tabs (all have white background and borders, active has highlighted border)
@@ -149,9 +141,6 @@
           s.classList.toggle('active', i === idx);
         });
       }
-
-      // Update counter badge
-      updateCounter(idx);
 
       // Smoothly cross-fade text
       const data = slidesData[idx];
@@ -224,8 +213,7 @@
       });
     }
 
-    // Initialize counter and start auto slider immediately
-    updateCounter(0);
+    // Start auto slider immediately
     startAutoSlider();
   }
 
