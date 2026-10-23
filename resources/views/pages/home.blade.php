@@ -7,13 +7,12 @@
 @section('content')
 
   <!-- ============================================================
-       SECTION 1: HERO BANNER (3-Slide Interactive Carousel, Split Layout 55/45)
+       SECTION 1: HERO BANNER (3-Slide Auto Carousel, Split Layout 55/45)
        ============================================================ -->
   <section class="hero" aria-label="Introduction">
     <div class="container">
       <div class="hero__inner">
         <div class="hero__content">
-          <div class="hero__eyebrow" id="hero-eyebrow">THERMAL PROCESS ENGINEERING // SPRAY DRYING SYSTEMS</div>
           <h1 class="hero__title" id="hero-title">
             Industrial <em id="hero-keyword">Spray Dryers</em>, Evaporators &amp; Bio-Technology Plants — Engineered in Pune, Trusted Across India.
           </h1>
@@ -25,7 +24,7 @@
             <a href="{{ route('products') }}" class="btn btn--ghost">Explore Our Products <span class="btn-arrow">→</span></a>
           </div>
 
-          <!-- Rotating Slide Control Strip -->
+          <!-- Rotating Slide Control Strip (All 3 on White Background with Borders) -->
           <div class="hero-slider-nav" role="tablist" aria-label="Core Equipment Families">
             <button class="hero-slide-tab active" role="tab" aria-selected="true" data-slide="0">
               <span class="hero-slide-tab__label">Spray Dryers</span>
@@ -42,7 +41,7 @@
           </div>
         </div>
 
-        <!-- Hero Right: Real Photography Duotone + Annotated Technical Schematic Panel -->
+        <!-- Hero Right: Clean Real Photography Visual Panel with Corner Framing -->
         <div class="hero__visual duotone-photo crop-marks">
           <div class="hero-visual-slides">
             <!-- Slide 0: Spray Dryers -->
@@ -50,30 +49,6 @@
               <img src="{{ asset('images/spray-dryer-plant.jpg') }}" alt="Industrial Spray Drying Tower Facility" class="hero-visual-img" />
               <div class="hero-visual-overlay"></div>
               <div class="hero-visual-grid"></div>
-              <svg class="hero-annot-svg" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <circle cx="250" cy="250" r="190" stroke="rgba(255,255,255,0.14)" stroke-width="1" stroke-dasharray="6 6"/>
-                <line x1="40" y1="250" x2="460" y2="250" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-                <line x1="250" y1="40" x2="250" y2="460" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-                <path d="M120,80 L200,80 L240,135" stroke="#EF7F1A" stroke-width="2" stroke-dasharray="5 3" fill="none"/>
-                <circle cx="240" cy="135" r="5" fill="#EF7F1A" class="pulse-ring"/>
-                <path d="M380,240 L300,240 L260,260" stroke="#3CA742" stroke-width="2" stroke-dasharray="5 3" fill="none"/>
-                <circle cx="260" cy="260" r="5" fill="#3CA742" class="pulse-ring"/>
-                <path d="M110,405 L210,405 L270,365" stroke="#2F75B6" stroke-width="2" stroke-dasharray="5 3" fill="none"/>
-                <circle cx="270" cy="365" r="5" fill="#2F75B6" class="pulse-ring"/>
-              </svg>
-              <div class="hero-callout hero-callout--top">
-                <span class="hero-callout__dot" style="background:#EF7F1A;"></span>
-                <span class="hero-callout__text">FEED INLET: 1,500 KG/HR</span>
-              </div>
-              <div class="hero-callout hero-callout--center">
-                <span class="hero-callout__dot" style="background:#EF7F1A;"></span>
-                <span class="hero-callout__text">THERMAL ZONE: 180°C</span>
-              </div>
-              <div class="hero-callout hero-callout--bottom">
-                <span class="hero-callout__dot" style="background:#3CA742;"></span>
-                <span class="hero-callout__text">CYCLONE DISCHARGE: 99.4%</span>
-              </div>
-              <div class="hero__visual-badge">FIG. 01 // CONTINUOUS PROCESS SCHEMATIC</div>
             </div>
 
             <!-- Slide 1: Evaporators -->
@@ -81,30 +56,6 @@
               <img src="{{ asset('images/evaporator-plant.jpg') }}" alt="Multi-Effect Industrial Evaporator Plant" class="hero-visual-img" />
               <div class="hero-visual-overlay"></div>
               <div class="hero-visual-grid"></div>
-              <svg class="hero-annot-svg" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <circle cx="250" cy="250" r="190" stroke="rgba(255,255,255,0.14)" stroke-width="1" stroke-dasharray="6 6"/>
-                <line x1="40" y1="250" x2="460" y2="250" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-                <line x1="250" y1="40" x2="250" y2="460" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-                <path d="M120,80 L220,80 L250,130" stroke="#EF7F1A" stroke-width="2" stroke-dasharray="5 3" fill="none"/>
-                <circle cx="250" cy="130" r="5" fill="#EF7F1A" class="pulse-ring"/>
-                <path d="M380,230 L290,230 L250,250" stroke="#2F75B6" stroke-width="2" stroke-dasharray="5 3" fill="none"/>
-                <circle cx="250" cy="250" r="5" fill="#2F75B6" class="pulse-ring"/>
-                <path d="M110,405 L220,405 L280,370" stroke="#3CA742" stroke-width="2" stroke-dasharray="5 3" fill="none"/>
-                <circle cx="280" cy="370" r="5" fill="#3CA742" class="pulse-ring"/>
-              </svg>
-              <div class="hero-callout hero-callout--top">
-                <span class="hero-callout__dot" style="background:#EF7F1A;"></span>
-                <span class="hero-callout__text">STEAM PRESSURE: 3.5 BAR (TVR)</span>
-              </div>
-              <div class="hero-callout hero-callout--center">
-                <span class="hero-callout__dot" style="background:#2F75B6;"></span>
-                <span class="hero-callout__text">EVAPORATION RATE: 4,500 KG/HR</span>
-              </div>
-              <div class="hero-callout hero-callout--bottom">
-                <span class="hero-callout__dot" style="background:#3CA742;"></span>
-                <span class="hero-callout__text">CONCENTRATE: 68° BRIX // ZLD COMPLIANT</span>
-              </div>
-              <div class="hero__visual-badge">FIG. 02 // MULTI-EFFECT FALLING FILM CALANDRIA</div>
             </div>
 
             <!-- Slide 2: Bio-Technology -->
@@ -112,30 +63,6 @@
               <img src="{{ asset('images/fermentation-distillery.jpg') }}" alt="Bio-Technology Fermentation and Distillation Plant" class="hero-visual-img" />
               <div class="hero-visual-overlay"></div>
               <div class="hero-visual-grid"></div>
-              <svg class="hero-annot-svg" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <circle cx="250" cy="250" r="190" stroke="rgba(255,255,255,0.14)" stroke-width="1" stroke-dasharray="6 6"/>
-                <line x1="40" y1="250" x2="460" y2="250" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-                <line x1="250" y1="40" x2="250" y2="460" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-                <path d="M120,80 L230,80 L270,140" stroke="#3CA742" stroke-width="2" stroke-dasharray="5 3" fill="none"/>
-                <circle cx="270" cy="140" r="5" fill="#3CA742" class="pulse-ring"/>
-                <path d="M380,220 L300,220 L260,250" stroke="#EF7F1A" stroke-width="2" stroke-dasharray="5 3" fill="none"/>
-                <circle cx="260" cy="250" r="5" fill="#EF7F1A" class="pulse-ring"/>
-                <path d="M110,405 L210,405 L250,360" stroke="#3CA742" stroke-width="2" stroke-dasharray="5 3" fill="none"/>
-                <circle cx="250" cy="360" r="5" fill="#3CA742" class="pulse-ring"/>
-              </svg>
-              <div class="hero-callout hero-callout--top">
-                <span class="hero-callout__dot" style="background:#3CA742;"></span>
-                <span class="hero-callout__text">FERMENTATION: 32°C // CONTINUOUS</span>
-              </div>
-              <div class="hero-callout hero-callout--center">
-                <span class="hero-callout__dot" style="background:#EF7F1A;"></span>
-                <span class="hero-callout__text">RECTIFICATION COLUMN: 96.5% ABV</span>
-              </div>
-              <div class="hero-callout hero-callout--bottom">
-                <span class="hero-callout__dot" style="background:#3CA742;"></span>
-                <span class="hero-callout__text">ETHANOL PURITY: 99.8% FUEL GRADE</span>
-              </div>
-              <div class="hero__visual-badge">FIG. 03 // 60 KLPD BIO-ETHANOL DISTILLATION TRAIN</div>
             </div>
           </div>
         </div>

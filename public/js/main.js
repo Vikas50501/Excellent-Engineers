@@ -106,31 +106,27 @@
   }
 
   /* ================================================================
-     4. HERO 3-SLIDE INTERACTIVE CAROUSEL (Spray Dryers / Evaporators / Bio-Tech)
+     4. HERO 3-SLIDE CONTINUOUS AUTO CAROUSEL (Spray Dryers / Evaporators / Bio-Tech)
   ================================================================ */
   function initHeroSlides() {
     const tabs = qsa('.hero-slide-tab');
     const visualSlides = qsa('.hero-visual-slide');
-    const eyebrowEl = qs('#hero-eyebrow');
     const titleEl = qs('#hero-title');
     const subEl = qs('#hero-sub');
-    const heroWrap = qs('.hero');
+    const sliderNav = qs('.hero-slider-nav');
 
     if (!tabs.length) return;
 
     const slidesData = [
       {
-        eyebrow: 'THERMAL PROCESS ENGINEERING // SPRAY DRYING SYSTEMS',
         title: 'Industrial <em id="hero-keyword">Spray Dryers</em>, Evaporators &amp; Bio-Technology Plants — Engineered in Pune, Trusted Across India.',
         sub: 'Excellent Dry-Tech designs, fabricates and commissions precision Spray Drying systems for food, pharma, chemical and dairy industries — from single units to complete turnkey plants.'
       },
       {
-        eyebrow: 'ENERGY-OPTIMISED CONCENTRATION // MULTI-EFFECT EVAPORATORS',
         title: 'Industrial Dryers, <em id="hero-keyword">Multi-Effect Evaporators</em> &amp; Bio-Technology Plants — Engineered in Pune, Trusted Across India.',
         sub: 'Engineered Falling Film, Forced Circulation, and Scraped Surface evaporators cutting steam consumption with TVR recompression, handling viscous feeds and zero liquid discharge.'
       },
       {
-        eyebrow: 'BIO-PROCESS & DISTILLATION // TURNKEY BIO-REFINERIES',
         title: 'Industrial Dryers, Evaporators &amp; <em id="hero-keyword">Bio-Technology Plants</em> — Engineered in Pune, Trusted Across India.',
         sub: 'Turnkey fermentation trains, continuous multi-column distillation, and fuel-grade ethanol plants engineered for high yield, environmental compliance, and 24/7 continuous operation.'
       }
@@ -138,10 +134,9 @@
 
     let currentIndex = 0;
     let timer = null;
-    let userInteracted = false;
 
     const showSlide = (idx) => {
-      // Update tabs
+      // Update tabs (all have white background and borders, active has highlighted border)
       tabs.forEach((t, i) => {
         const isActive = (i === idx);
         t.classList.toggle('active', isActive);
@@ -158,15 +153,6 @@
       // Smoothly cross-fade text
       const data = slidesData[idx];
       if (data) {
-        if (eyebrowEl) {
-          eyebrowEl.style.opacity = '0';
-          eyebrowEl.style.transform = 'translateY(-4px)';
-          setTimeout(() => {
-            eyebrowEl.textContent = data.eyebrow;
-            eyebrowEl.style.opacity = '1';
-            eyebrowEl.style.transform = 'translateY(0)';
-          }, 140);
-        }
         if (titleEl) {
           titleEl.style.opacity = '0';
           setTimeout(() => {
@@ -186,41 +172,35 @@
       currentIndex = idx;
     };
 
-    tabs.forEach((tab, i) => {
-      tab.addEventListener('click', () => {
-        userInteracted = true;
-        clearInterval(timer);
-        showSlide(i);
-      });
-    });
-
     const nextSlide = () => {
       showSlide((currentIndex + 1) % tabs.length);
     };
 
-    // Auto-advance every 6.5s unless prefers-reduced-motion is active
-    const prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-    const startTimer = () => {
-      if (prefersReducedMotion || userInteracted) return;
+    const startAutoSlider = () => {
       clearInterval(timer);
-      timer = setInterval(nextSlide, 6500);
+      timer = setInterval(nextSlide, 4500);
     };
 
-    if (heroWrap) {
-      heroWrap.addEventListener('mouseenter', () => {
+    // Click handler: immediate transition and reset timer to continue auto sliding
+    tabs.forEach((tab, i) => {
+      tab.addEventListener('click', () => {
+        showSlide(i);
+        startAutoSlider();
+      });
+    });
+
+    // Pause on hover over tabs, resume on leave
+    if (sliderNav) {
+      sliderNav.addEventListener('mouseenter', () => {
         clearInterval(timer);
       });
-      heroWrap.addEventListener('mouseleave', () => {
-        if (!userInteracted && !prefersReducedMotion) {
-          startTimer();
-        }
+      sliderNav.addEventListener('mouseleave', () => {
+        startAutoSlider();
       });
     }
 
-    if (!prefersReducedMotion) {
-      startTimer();
-    }
+    // Start auto slider immediately
+    startAutoSlider();
   }
 
   /* ================================================================
