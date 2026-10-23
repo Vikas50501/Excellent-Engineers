@@ -55,7 +55,7 @@
       <ul class="nav__menu" role="list">
         <li><a href="{{ route('home') }}" class="nav__link {{ request()->routeIs('home') ? 'active' : '' }}">Home</a></li>
         <li><a href="{{ route('about') }}" class="nav__link {{ request()->routeIs('about') ? 'active' : '' }}">About Us</a></li>
-        <li><a href="{{ route('products') }}" class="nav__link {{ request()->routeIs('products') ? 'active' : '' }}">Product</a></li>
+        <li><a href="{{ route('products') }}" class="nav__link {{ request()->routeIs('products') ? 'active' : '' }}">Products</a></li>
         <li><a href="{{ route('gallery') }}" class="nav__link {{ request()->routeIs('gallery') ? 'active' : '' }}">Projects</a></li>
         <li><a href="{{ route('maintenance') }}" class="nav__link {{ request()->routeIs('maintenance') ? 'active' : '' }}">Maintenance</a></li>
         <li><a href="{{ route('careers') }}" class="nav__link {{ request()->routeIs('careers*') ? 'active' : '' }}">Careers</a></li>
@@ -71,71 +71,85 @@
     </div>
   </nav>
 
-  <!-- Mobile Navigation Drawer -->
+  <!-- Mobile Navigation Backdrop & Drawer -->
+  <div id="mobile-nav-backdrop" class="mobile-nav-backdrop"></div>
   <div id="mobile-nav" class="mobile-nav" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
-    <div class="mobile-nav__header">
-      <div class="mobile-nav__brand">
-        <span class="mobile-nav__brand-title">Menu &amp; Quick Access</span>
-        <span class="mobile-nav__brand-sub">Excellent Dry-Tech Pvt Ltd</span>
-      </div>
-      <button class="mobile-nav__close" aria-label="Close menu">&times;</button>
+    <div class="mobile-nav__top">
+      <span class="mobile-nav__top-tag">DIRECTORY // PROCESS EQUIPMENT</span>
+      <span class="mobile-nav__top-status">PUNE, IN</span>
     </div>
 
     <div class="mobile-nav__menu">
-      <a href="{{ route('home') }}" class="mobile-nav__link {{ request()->routeIs('home') ? 'active' : '' }}">
-        <span class="mobile-nav__link-text">Home</span>
-        <span class="mobile-nav__arrow">&rarr;</span>
+      <a href="{{ route('home') }}" class="mobile-nav__item {{ request()->routeIs('home') ? 'active' : '' }}">
+        <div class="mobile-nav__item-main">
+          <span class="mobile-nav__idx">01</span>
+          <span class="mobile-nav__label">Home</span>
+        </div>
+        <span class="mobile-nav__chevron">&rarr;</span>
       </a>
-      <a href="{{ route('about') }}" class="mobile-nav__link {{ request()->routeIs('about') ? 'active' : '' }}">
-        <span class="mobile-nav__link-text">About Us</span>
-        <span class="mobile-nav__arrow">&rarr;</span>
+      <a href="{{ route('about') }}" class="mobile-nav__item {{ request()->routeIs('about') ? 'active' : '' }}">
+        <div class="mobile-nav__item-main">
+          <span class="mobile-nav__idx">02</span>
+          <span class="mobile-nav__label">About Us</span>
+        </div>
+        <span class="mobile-nav__chevron">&rarr;</span>
       </a>
-      <a href="{{ route('products') }}" class="mobile-nav__link {{ request()->routeIs('products') ? 'active' : '' }}">
-        <span class="mobile-nav__link-text">Product Range</span>
-        <span class="mobile-nav__arrow">&rarr;</span>
+      <a href="{{ route('products') }}" class="mobile-nav__item {{ request()->routeIs('products') ? 'active' : '' }}">
+        <div class="mobile-nav__item-main">
+          <span class="mobile-nav__idx">03</span>
+          <span class="mobile-nav__label">Product Range</span>
+        </div>
+        <span class="mobile-nav__chevron">&rarr;</span>
       </a>
-      <a href="{{ route('gallery') }}" class="mobile-nav__link {{ request()->routeIs('gallery') ? 'active' : '' }}">
-        <span class="mobile-nav__link-text">Installed Projects</span>
-        <span class="mobile-nav__arrow">&rarr;</span>
+      <a href="{{ route('gallery') }}" class="mobile-nav__item {{ request()->routeIs('gallery') ? 'active' : '' }}">
+        <div class="mobile-nav__item-main">
+          <span class="mobile-nav__idx">04</span>
+          <span class="mobile-nav__label">Installed Projects</span>
+        </div>
+        <span class="mobile-nav__chevron">&rarr;</span>
       </a>
-      <a href="{{ route('maintenance') }}" class="mobile-nav__link {{ request()->routeIs('maintenance') ? 'active' : '' }}">
-        <span class="mobile-nav__link-text">Maintenance &amp; Support</span>
-        <span class="mobile-nav__arrow">&rarr;</span>
+      <a href="{{ route('maintenance') }}" class="mobile-nav__item {{ request()->routeIs('maintenance') ? 'active' : '' }}">
+        <div class="mobile-nav__item-main">
+          <span class="mobile-nav__idx">05</span>
+          <span class="mobile-nav__label">Maintenance &amp; Support</span>
+        </div>
+        <span class="mobile-nav__chevron">&rarr;</span>
       </a>
-      <a href="{{ route('careers') }}" class="mobile-nav__link {{ request()->routeIs('careers*') ? 'active' : '' }}">
-        <span class="mobile-nav__link-text">Careers</span>
-        <span class="mobile-nav__arrow">&rarr;</span>
+      <a href="{{ route('careers') }}" class="mobile-nav__item {{ request()->routeIs('careers*') ? 'active' : '' }}">
+        <div class="mobile-nav__item-main">
+          <span class="mobile-nav__idx">06</span>
+          <span class="mobile-nav__label">Careers</span>
+        </div>
+        <span class="mobile-nav__chevron">&rarr;</span>
       </a>
-      <a href="{{ route('contact') }}" class="mobile-nav__link {{ request()->routeIs('contact*') ? 'active' : '' }}">
-        <span class="mobile-nav__link-text">Contact Us</span>
-        <span class="mobile-nav__arrow">&rarr;</span>
+      <a href="{{ route('contact') }}" class="mobile-nav__item {{ request()->routeIs('contact*') ? 'active' : '' }}">
+        <div class="mobile-nav__item-main">
+          <span class="mobile-nav__idx">07</span>
+          <span class="mobile-nav__label">Contact Us</span>
+        </div>
+        <span class="mobile-nav__chevron">&rarr;</span>
       </a>
     </div>
 
-    <div class="mobile-nav__cta-wrap">
-      <a href="{{ route('contact') }}" class="btn btn--primary" style="width: 100%; justify-content: center;">
-        Get a Technical Quote &rarr;
-      </a>
-    </div>
-
+    <!-- Works & Contact Card in Drawer -->
     <div class="mobile-nav__contact">
-      <div class="mobile-nav__contact-heading">Direct Contact &amp; Works</div>
+      <div class="mobile-nav__contact-heading">DIRECT ENGINEERING INQUIRIES</div>
       <a href="tel:+919922754848" class="mobile-contact-row">
-        
-        <span>+91 99227 54848 / 99226 54848</span>
+        <span class="contact-pill-tag">TEL</span>
+        <span>+91 99227 54848 / +91 99226 54848</span>
       </a>
       <a href="mailto:excellentengineers.sr@gmail.com" class="mobile-contact-row">
-        
+        <span class="contact-pill-tag">EMAIL</span>
         <span>excellentengineers.sr@gmail.com</span>
       </a>
       <div class="mobile-contact-row">
-        
+        <span class="contact-pill-tag">WORKS</span>
         <span>Gat No. 607, Nighoje–Moi Road, At. Moi, Pune – 410501</span>
       </div>
     </div>
 
     <div class="mobile-nav__footer">
-      <span>© {{ date('Y') }} Excellent Dry-Tech Pvt Ltd</span>
+      <span>© {{ date('Y') }} Excellent Dry-Tech Pvt Ltd · Pune, India</span>
     </div>
   </div>
 

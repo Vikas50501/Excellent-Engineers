@@ -55,7 +55,7 @@
   function initMobileMenu() {
     const hamburger = qs('.nav__hamburger');
     const mobileNav = qs('.mobile-nav');
-    const closeBtn = qs('.mobile-nav__close');
+    const backdrop = qs('#mobile-nav-backdrop');
     if (!hamburger || !mobileNav) return;
 
     let isOpen = false;
@@ -63,21 +63,10 @@
     const setMenuState = (open) => {
       isOpen = open;
       mobileNav.classList.toggle('open', isOpen);
-      hamburger.setAttribute('aria-expanded', isOpen);
+      hamburger.classList.toggle('is-active', isOpen);
+      hamburger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      if (backdrop) backdrop.classList.toggle('open', isOpen);
       document.body.classList.toggle('nav-open', isOpen);
-
-      const spans = qsa('span', hamburger);
-      if (spans.length === 3) {
-        if (isOpen) {
-          spans[0].style.transform = 'translateY(7px) rotate(45deg)';
-          spans[1].style.opacity = '0';
-          spans[2].style.transform = 'translateY(-7px) rotate(-45deg)';
-        } else {
-          spans[0].style.transform = '';
-          spans[1].style.opacity = '';
-          spans[2].style.transform = '';
-        }
-      }
     };
 
     hamburger.addEventListener('click', (e) => {
@@ -85,8 +74,8 @@
       setMenuState(!isOpen);
     });
 
-    if (closeBtn) {
-      closeBtn.addEventListener('click', () => setMenuState(false));
+    if (backdrop) {
+      backdrop.addEventListener('click', () => setMenuState(false));
     }
 
     // Close on link click
