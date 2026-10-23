@@ -303,23 +303,63 @@
     const panels = qsa('.product-tab-panel');
     if (!btns.length) return;
 
+    function activateTab(target) {
+      btns.forEach(b => {
+        const isMatch = b.dataset.tab === target;
+        b.classList.toggle('active', isMatch);
+        b.setAttribute('aria-selected', isMatch ? 'true' : 'false');
+      });
+
+      if (target === 'all') {
+        panels.forEach(p => p.classList.add('active'));
+      } else {
+        panels.forEach(p => {
+          if (p.id === `tab-${target}`) {
+            p.classList.add('active');
+          } else {
+            p.classList.remove('active');
+          }
+        });
+      }
+    }
+
     btns.forEach(btn => {
       btn.addEventListener('click', () => {
-        const target = btn.dataset.tab;
-        btns.forEach(b => b.classList.remove('active'));
-        panels.forEach(p => p.classList.remove('active'));
-
-        btn.classList.add('active');
-        const panel = qs(`#tab-${target}`);
-        if (panel) panel.classList.add('active');
+        activateTab(btn.dataset.tab);
       });
     });
 
-    // Check URL hash
-    const hash = window.location.hash.replace('#', '');
-    if (hash) {
-      const matchingBtn = qs(`.product-tab-btn[data-tab="${hash}"]`);
-      if (matchingBtn) matchingBtn.click();
+    // Handle thumbnail cards click to jump and reveal target system
+    qsa('.prod-thumb-card').forEach(card => {
+      card.addEventListener('click', (e) => {
+        const targetId = card.getAttribute('href');
+        activateTab('all');
+        const targetEl = qs(targetId);
+        if (targetEl) {
+          e.preventDefault();
+          targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          if (history.pushState) {
+            history.pushState(null, null, targetId);
+          }
+        }
+      });
+    });
+
+    // Check URL hash on initial load
+    const rawHash = window.location.hash.replace('#', '');
+    if (rawHash) {
+      const cleanHash = rawHash.replace('tab-', '');
+      if (['all', 'dryers', 'evaporators', 'biotech'].includes(cleanHash)) {
+        activateTab(cleanHash);
+      } else {
+        activateTab('all');
+        const targetEl = qs(`#${rawHash}`);
+        if (targetEl) {
+          setTimeout(() => {
+            targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }, 350);
+        }
+      }
     }
   }
 

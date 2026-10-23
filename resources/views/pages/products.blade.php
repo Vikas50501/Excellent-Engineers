@@ -11,27 +11,154 @@
     <div class="container">
       <h1 class="page-hero__title">Our Process Equipment Range</h1>
       <p class="page-hero__sub">
-        Excellent Dry-Tech designs and manufactures process equipment across three core categories — Dryers, Evaporators and Bio-Technology Plants — engineered individually or supplied as part of a complete turnkey system.
+        Excellent Dry-Tech designs, fabricates and commissions industrial process equipment across three core categories — Dryers, Evaporators, and Bio-Technology Plants — supplied individually or delivered as complete turnkey production trains.
       </p>
     </div>
   </header>
 
-  <!-- PRODUCT TABS & DETAIL SECTION -->
-  <section class="section" aria-label="Equipment Catalogue">
+  <!-- SECTION 1: ALL PRODUCTS VISUAL SHOWCASE GRID -->
+  <section class="section section--white" style="padding-bottom: 2rem;" aria-label="Product Portfolio Overview">
     <div class="container">
-
-      <!-- Drawing Index Tabs -->
-      <div class="product-tabs-bar" role="tablist">
-        <button class="product-tab-btn active" role="tab" aria-selected="true" data-tab="dryers">Dryers (4 Systems)</button>
-        <button class="product-tab-btn" role="tab" aria-selected="false" data-tab="evaporators">Evaporators (3 Systems)</button>
-        <button class="product-tab-btn" role="tab" aria-selected="false" data-tab="biotech">Bio-Technology Plants</button>
+      <div class="section-head reveal">
+        <h2>Complete Process Equipment Portfolio</h2>
+        <p>Click any system below to inspect its technical design specifications, capacity range, and P&amp;ID schematics.</p>
       </div>
 
-      <!-- TAB 1: DRYERS -->
+      <div class="product-gallery-grid reveal">
+        <!-- 1. Spray Dryer -->
+        <a href="#system-spray-dryer" class="prod-thumb-card" data-category="dryers">
+          <div class="prod-thumb-card__media">
+            <img src="{{ asset('images/spray-dryer-plant.jpg') }}" alt="Turnkey Spray Drying Tower Plant" class="prod-thumb-card__img" loading="lazy" />
+            <span class="prod-thumb-card__badge">DRY-01</span>
+          </div>
+          <div class="prod-thumb-card__info">
+            <h3 class="prod-thumb-card__title">Spray Dryers</h3>
+            <span class="prod-thumb-card__spec">Liquid to Powder &bull; 5–5,000 kg/hr &bull; SS 316</span>
+          </div>
+        </a>
+
+        <!-- 2. Fluid Bed Dryer -->
+        <a href="#system-fluid-bed" class="prod-thumb-card" data-category="dryers">
+          <div class="prod-thumb-card__media">
+            <img src="{{ asset('images/fluid-bed-dryer.jpg') }}" alt="Sanitary Pharmaceutical Fluid Bed Dryer" class="prod-thumb-card__img" loading="lazy" />
+            <span class="prod-thumb-card__badge">DRY-02</span>
+          </div>
+          <div class="prod-thumb-card__info">
+            <h3 class="prod-thumb-card__title">Fluid Bed Dryers</h3>
+            <span class="prod-thumb-card__spec">Gentle Granulation &bull; 0.3 Ra Sanitary Finish</span>
+          </div>
+        </a>
+
+        <!-- 3. Flash Dryer -->
+        <a href="#system-flash-dryer" class="prod-thumb-card" data-category="dryers">
+          <div class="prod-thumb-card__media">
+            <img src="{{ asset('images/flash-dryer.jpg') }}" alt="Pneumatic Flash Drying Column" class="prod-thumb-card__img" loading="lazy" />
+            <span class="prod-thumb-card__badge">DRY-03</span>
+          </div>
+          <div class="prod-thumb-card__info">
+            <h3 class="prod-thumb-card__title">Flash Dryers</h3>
+            <span class="prod-thumb-card__spec">Pneumatic De-agglomerator &bull; Rapid Moisture Flash</span>
+          </div>
+        </a>
+
+        <!-- 4. Rotary Dryer -->
+        <a href="#system-rotary-dryer" class="prod-thumb-card" data-category="dryers">
+          <div class="prod-thumb-card__media">
+            <img src="{{ asset('images/rotary-dryer.jpg') }}" alt="Heavy-Duty Continuous Rotary Drum Dryer" class="prod-thumb-card__img" loading="lazy" />
+            <span class="prod-thumb-card__badge">DRY-04</span>
+          </div>
+          <div class="prod-thumb-card__info">
+            <h3 class="prod-thumb-card__title">Rotary Dryers</h3>
+            <span class="prod-thumb-card__spec">Heavy Rotating Drum &bull; Girth Gear &bull; Minerals &amp; Agro</span>
+          </div>
+        </a>
+
+        <!-- 5. Falling Film Evaporator -->
+        <a href="#system-falling-film" class="prod-thumb-card" data-category="evaporators">
+          <div class="prod-thumb-card__media">
+            <img src="{{ asset('images/evaporator-plant.jpg') }}" alt="Multi-Effect Falling Film Evaporator Plant" class="prod-thumb-card__img" loading="lazy" />
+            <span class="prod-thumb-card__badge">EVAP-01</span>
+          </div>
+          <div class="prod-thumb-card__info">
+            <h3 class="prod-thumb-card__title">Falling Film Evaporators</h3>
+            <span class="prod-thumb-card__spec">Multi-Effect TVR &bull; 0.18 Steam Economy</span>
+          </div>
+        </a>
+
+        <!-- 6. Scraped Surface Evaporator -->
+        <a href="#system-scraped-surface" class="prod-thumb-card" data-category="evaporators">
+          <div class="prod-thumb-card__media">
+            <img src="{{ asset('images/scraped-surface-evaporator.jpg') }}" alt="Wiped-Film Scraped Surface Evaporator" class="prod-thumb-card__img" loading="lazy" />
+            <span class="prod-thumb-card__badge">EVAP-02</span>
+          </div>
+          <div class="prod-thumb-card__info">
+            <h3 class="prod-thumb-card__title">Scraped Surface Evaporators</h3>
+            <span class="prod-thumb-card__spec">Dynamic Scraper Blades &bull; 50,000+ cP Viscosity</span>
+          </div>
+        </a>
+
+        <!-- 7. Forced Circulation Evaporator -->
+        <a href="#system-forced-circulation" class="prod-thumb-card" data-category="evaporators">
+          <div class="prod-thumb-card__media">
+            <img src="{{ asset('images/insight-evaporator.jpg') }}" alt="Forced Circulation Evaporator Tube Bundle" class="prod-thumb-card__img" loading="lazy" />
+            <span class="prod-thumb-card__badge">EVAP-03</span>
+          </div>
+          <div class="prod-thumb-card__info">
+            <h3 class="prod-thumb-card__title">Forced Circulation Evaporators</h3>
+            <span class="prod-thumb-card__spec">High Axial Velocity &bull; Zero Liquid Discharge (ZLD)</span>
+          </div>
+        </a>
+
+        <!-- 8. Fermentation & Distillation -->
+        <a href="#system-fermentation" class="prod-thumb-card" data-category="biotech">
+          <div class="prod-thumb-card__media">
+            <img src="{{ asset('images/fermentation-distillery.jpg') }}" alt="Fermentation & Multi-Pressure Distillation Columns" class="prod-thumb-card__img" loading="lazy" />
+            <span class="prod-thumb-card__badge">BIO-01</span>
+          </div>
+          <div class="prod-thumb-card__info">
+            <h3 class="prod-thumb-card__title">Fermentation &amp; Distillation</h3>
+            <span class="prod-thumb-card__spec">Multipressure Continuous Train &bull; Grain &amp; Molasses</span>
+          </div>
+        </a>
+
+        <!-- 9. Fuel Ethanol Plants -->
+        <a href="#system-fuel-ethanol" class="prod-thumb-card" data-category="biotech">
+          <div class="prod-thumb-card__media">
+            <img src="{{ asset('images/fuel-ethanol-plant.jpg') }}" alt="Turnkey Fuel Ethanol Refinery and MSDU Dehydration" class="prod-thumb-card__img" loading="lazy" />
+            <span class="prod-thumb-card__badge">BIO-02</span>
+          </div>
+          <div class="prod-thumb-card__info">
+            <h3 class="prod-thumb-card__title">Fuel Ethanol Plants</h3>
+            <span class="prod-thumb-card__spec">Turnkey 99.8% Anhydrous &bull; MSDU Technology</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: PRODUCT TABS & DETAIL SPECIFICATIONS -->
+  <section class="section" id="specs-section" aria-label="Detailed Equipment Specifications">
+    <div class="container">
+
+      <!-- Drawing Index Tabs Filter -->
+      <div class="product-tabs-bar" role="tablist">
+        <button class="product-tab-btn active" role="tab" aria-selected="true" data-tab="all">All Systems (9 Plants)</button>
+        <button class="product-tab-btn" role="tab" aria-selected="false" data-tab="dryers">Dryers (4 Systems)</button>
+        <button class="product-tab-btn" role="tab" aria-selected="false" data-tab="evaporators">Evaporators (3 Systems)</button>
+        <button class="product-tab-btn" role="tab" aria-selected="false" data-tab="biotech">Bio-Technology Plants (2)</button>
+      </div>
+
+      <!-- ========================================================
+           CATEGORY 1: DRYERS
+           ======================================================== -->
       <div id="tab-dryers" class="product-tab-panel active" role="tabpanel">
+        <div class="product-category-divider">
+          <span class="product-category-title">CATEGORY 01 // INDUSTRIAL DRYING SYSTEMS</span>
+          <span class="product-category-line"></span>
+        </div>
         
-        <!-- Spray Dryers -->
-        <article class="product-deep-card reveal">
+        <!-- 1. Spray Dryers -->
+        <article class="product-deep-card reveal" id="system-spray-dryer">
           <div class="product-deep-header">
             <div>
               <h2>Spray Dryers</h2>
@@ -109,8 +236,8 @@
           </div>
         </article>
 
-        <!-- Fluid Bed Dryers -->
-        <article class="product-deep-card reveal">
+        <!-- 2. Fluid Bed Dryers -->
+        <article class="product-deep-card reveal" id="system-fluid-bed">
           <div class="product-deep-header">
             <div>
               <h2>Fluid Bed Dryers</h2>
@@ -127,6 +254,25 @@
                 <span>Sanitary Fluid Bed Processor</span>
                 <span>0.3 Ra Sanitary Finish</span>
               </div>
+            </div>
+          </div>
+
+          <div class="two-col-bullets">
+            <div>
+              <h4>Key Applications</h4>
+              <ul class="bullet-list" style="margin-top: 0.5rem;">
+                <li class="bullet-item"><span class="bullet-item__icon"></span><span>Pharmaceutical tablet granules and pellet drying.</span></li>
+                <li class="bullet-item"><span class="bullet-item__icon"></span><span>Agro-chemicals, pesticides, and fertilizer prills.</span></li>
+                <li class="bullet-item"><span class="bullet-item__icon"></span><span>Instant food mixes, yeast, starches, and beverage crystals.</span></li>
+              </ul>
+            </div>
+            <div>
+              <h4>Engineering Benefits</h4>
+              <ul class="bullet-list" style="margin-top: 0.5rem;">
+                <li class="bullet-item"><span class="bullet-item__icon"></span><span>Gentle low-velocity fluidized drying with zero mechanical shear.</span></li>
+                <li class="bullet-item"><span class="bullet-item__icon"></span><span>Precise final moisture tolerance within ±0.2%.</span></li>
+                <li class="bullet-item"><span class="bullet-item__icon"></span><span>Quick batch cycle turnaround and easy Clean-In-Place (CIP).</span></li>
+              </ul>
             </div>
           </div>
 
@@ -161,8 +307,8 @@
           </div>
         </article>
 
-        <!-- Flash Dryer -->
-        <article class="product-deep-card reveal">
+        <!-- 3. Flash Dryer -->
+        <article class="product-deep-card reveal" id="system-flash-dryer">
           <div class="product-deep-header">
             <div>
               <h2>Flash Dryers</h2>
@@ -211,8 +357,8 @@
           </div>
         </article>
 
-        <!-- Rotary Dryers -->
-        <article class="product-deep-card reveal">
+        <!-- 4. Rotary Dryers -->
+        <article class="product-deep-card reveal" id="system-rotary-dryer">
           <div class="product-deep-header">
             <div>
               <h2>Rotary Dryers</h2>
@@ -262,11 +408,17 @@
         </article>
       </div>
 
-      <!-- TAB 2: EVAPORATORS -->
-      <div id="tab-evaporators" class="product-tab-panel" role="tabpanel">
+      <!-- ========================================================
+           CATEGORY 2: EVAPORATORS
+           ======================================================== -->
+      <div id="tab-evaporators" class="product-tab-panel active" role="tabpanel">
+        <div class="product-category-divider">
+          <span class="product-category-title">CATEGORY 02 // EVAPORATORS &amp; CONCENTRATION SYSTEMS</span>
+          <span class="product-category-line"></span>
+        </div>
 
-        <!-- Falling Film Evaporator -->
-        <article class="product-deep-card reveal">
+        <!-- 5. Falling Film Evaporator -->
+        <article class="product-deep-card reveal" id="system-falling-film">
           <div class="product-deep-header">
             <div>
               <h2>Falling Film Evaporators</h2>
@@ -317,8 +469,8 @@
           </div>
         </article>
 
-        <!-- Scraped Surface Evaporator -->
-        <article class="product-deep-card reveal">
+        <!-- 6. Scraped Surface Evaporator -->
+        <article class="product-deep-card reveal" id="system-scraped-surface">
           <div class="product-deep-header">
             <div>
               <h2>Scraped Surface Evaporators</h2>
@@ -369,8 +521,8 @@
           </div>
         </article>
 
-        <!-- Forced Circulation Evaporator -->
-        <article class="product-deep-card reveal">
+        <!-- 7. Forced Circulation Evaporator -->
+        <article class="product-deep-card reveal" id="system-forced-circulation">
           <div class="product-deep-header">
             <div>
               <h2>Forced Circulation Evaporators</h2>
@@ -421,11 +573,17 @@
         </article>
       </div>
 
-      <!-- TAB 3: BIO-TECHNOLOGY -->
-      <div id="tab-biotech" class="product-tab-panel" role="tabpanel">
+      <!-- ========================================================
+           CATEGORY 3: BIO-TECHNOLOGY & ETHANOL
+           ======================================================== -->
+      <div id="tab-biotech" class="product-tab-panel active" role="tabpanel">
+        <div class="product-category-divider">
+          <span class="product-category-title">CATEGORY 03 // BIO-TECHNOLOGY &amp; DISTILLATION PLANTS</span>
+          <span class="product-category-line"></span>
+        </div>
 
-        <!-- Fermentation & Distillation -->
-        <article class="product-deep-card reveal">
+        <!-- 8. Fermentation & Distillation -->
+        <article class="product-deep-card reveal" id="system-fermentation">
           <div class="product-deep-header">
             <div>
               <h2>Fermentation &amp; Distillation Systems</h2>
@@ -476,8 +634,8 @@
           </div>
         </article>
 
-        <!-- Fuel Ethanol Plants -->
-        <article class="product-deep-card reveal">
+        <!-- 9. Fuel Ethanol Plants -->
+        <article class="product-deep-card reveal" id="system-fuel-ethanol">
           <div class="product-deep-header">
             <div>
               <h2>Fuel Ethanol Plants (Turnkey Delivery)</h2>
