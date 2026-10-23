@@ -5,6 +5,12 @@ use Illuminate\Http\Request;
 
 define('LARAVEL_START', microtime(true));
 
+// Force HTTPS when behind Vercel reverse proxy
+if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https') {
+    $_SERVER['HTTPS'] = 'on';
+    $_SERVER['SERVER_PORT'] = 443;
+}
+
 // Initialize writable storage directories in /tmp for Vercel Serverless environment
 $storagePaths = [
     '/tmp/storage/framework/views',
