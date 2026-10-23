@@ -102,6 +102,11 @@
 
         <!-- Right: Direct Contact & Location Info -->
         <div class="reveal stagger-1">
+          <div class="spec-sheet-card__media" style="height: 220px; margin-bottom: 1.25rem;">
+            <img src="{{ asset('images/fabrication-workshop.jpg') }}" alt="Excellent Dry-Tech Heavy Fabrication Facility in Moi, Pune" class="spec-sheet-card__img" loading="lazy" />
+            <div class="spec-sheet-card__badge">WORKS // MOI, KHED, PUNE</div>
+          </div>
+
           <div class="contact-info-card">
             <h3 style="font-size: 1.35rem; margin-bottom: 0.25rem; color: var(--blue-deep);">Excellent Dry-Tech Pvt Ltd</h3>
             <p style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--steel); margin-bottom: 1.5rem;">Formerly Excellent Engineers</p>

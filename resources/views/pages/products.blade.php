@@ -39,15 +39,15 @@
                 Converts liquid feed — solutions, emulsions or slurries — into a fine, free-flowing powder in a single continuous pass. Feed is atomised into a heated air chamber where moisture evaporates almost instantly, preserving product quality while giving you consistent particle size and bulk density batch after batch.
               </p>
             </div>
-            <div class="product-deep-diagram">
-              <svg width="220" height="150" viewBox="0 0 220 150" fill="none" stroke="#0E5794" stroke-width="1.5">
-                <path d="M40,25 L120,25 L120,80 L80,125 L80,140 L70,140 L40,80 Z" fill="rgba(14,87,148,0.06)"/>
-                <circle cx="80" cy="25" r="7" stroke="#EF7F1A" stroke-width="2"/>
-                <path d="M120,45 L155,45 L155,75 L140,110 L140,135 L130,135 L120,75 Z" fill="rgba(47,117,182,0.06)"/>
-                <line x1="80" y1="140" x2="80" y2="148" stroke="#3CA742" stroke-width="2"/>
-                <text x="35" y="16" fill="#7688A1" font-family="monospace" font-size="9">CHAMBER </text>
-                <text x="145" y="38" fill="#7688A1" font-family="monospace" font-size="9">CYCLONE </text>
-              </svg>
+            <div class="product-deep-visual">
+              <div class="product-deep-photo-box">
+                <img src="{{ asset('images/spray-dryer-plant.jpg') }}" alt="Turnkey Industrial Spray Drying Plant Tower in Pune" class="product-deep-img" loading="lazy" />
+                <div class="product-deep-badge">SYSTEM // DRY-01</div>
+              </div>
+              <div class="product-deep-caption">
+                <span>1,500 kg/hr Turnkey Tower</span>
+                <span>SS 316L Mirror Polish</span>
+              </div>
             </div>
           </div>
 
@@ -87,9 +87,26 @@
           </table>
           </div>
 
-          <p style="font-size: 0.875rem; color: var(--steel);">
+          <p style="font-size: 0.875rem; color: var(--steel); margin-top: 1rem;">
             <strong>How It’s Built:</strong> Features integrated cyclone or pulse-jet bag filter powder recovery, indirect hot-air generator (steam, thermic fluid, or direct-fired gas), and instrumented PLC control console with automated inlet/outlet temperature interlocking.
           </p>
+
+          <div class="product-deep-blueprint-drawer">
+            <div class="blueprint-drawer-header">
+              <span class="blueprint-drawer-title">PROCESS SCHEMATIC &bull; SPRAY DRYING FLOW</span>
+              <span class="blueprint-drawer-ref">P&amp;ID // SD-1500-REV-04</span>
+            </div>
+            <div class="product-deep-diagram">
+              <svg width="220" height="150" viewBox="0 0 220 150" fill="none" stroke="#0E5794" stroke-width="1.5">
+                <path d="M40,25 L120,25 L120,80 L80,125 L80,140 L70,140 L40,80 Z" fill="rgba(14,87,148,0.06)"/>
+                <circle cx="80" cy="25" r="7" stroke="#EF7F1A" stroke-width="2"/>
+                <path d="M120,45 L155,45 L155,75 L140,110 L140,135 L130,135 L120,75 Z" fill="rgba(47,117,182,0.06)"/>
+                <line x1="80" y1="140" x2="80" y2="148" stroke="#3CA742" stroke-width="2"/>
+                <text x="35" y="16" fill="#7688A1" font-family="monospace" font-size="9">CHAMBER </text>
+                <text x="145" y="38" fill="#7688A1" font-family="monospace" font-size="9">CYCLONE </text>
+              </svg>
+            </div>
+          </div>
         </article>
 
         <!-- Fluid Bed Dryers -->
@@ -101,14 +118,15 @@
                 Suspends wet granules or powder on an upward cushion of conditioned hot air for gentle, uniform drying with minimal attrition. Ideal where consistent moisture content across every batch is critical.
               </p>
             </div>
-            <div class="product-deep-diagram">
-              <svg width="220" height="150" viewBox="0 0 220 150" fill="none" stroke="#0E5794" stroke-width="1.5">
-                <rect x="50" y="30" width="100" height="75" rx="3" fill="rgba(14,87,148,0.06)"/>
-                <line x1="50" y1="85" x2="150" y2="85" stroke-dasharray="3 3"/>
-                <path d="M65,100 Q100,60 135,100" stroke="#EF7F1A" stroke-width="2"/>
-                <path d="M70,115 L70,85 M100,115 L100,85 M130,115 L130,85" stroke="#3CA742"/>
-                <text x="55" y="24" fill="#7688A1" font-family="monospace" font-size="9">EXPANSION CHAMBER </text>
-              </svg>
+            <div class="product-deep-visual">
+              <div class="product-deep-photo-box">
+                <img src="{{ asset('images/fluid-bed-dryer.jpg') }}" alt="Pharmaceutical Fluid Bed Dryer and Granulator" class="product-deep-img" loading="lazy" />
+                <div class="product-deep-badge">SYSTEM // DRY-02</div>
+              </div>
+              <div class="product-deep-caption">
+                <span>Sanitary Fluid Bed Processor</span>
+                <span>0.3 Ra Sanitary Finish</span>
+              </div>
             </div>
           </div>
 
@@ -124,6 +142,23 @@
               <tr><td>Material of Construction</td><td>SS 304, SS 316, SS 316L with 0.3 Ra sanitary weld finishes</td></tr>
             </tbody>
           </table>
+          </div>
+
+          <div class="product-deep-blueprint-drawer">
+            <div class="blueprint-drawer-header">
+              <span class="blueprint-drawer-title">PROCESS SCHEMATIC &bull; FLUID BED EXPANSION CHAMBER</span>
+              <span class="blueprint-drawer-ref">P&amp;ID // FBD-02-REV-02</span>
+            </div>
+            <div class="product-deep-diagram">
+              <svg width="220" height="150" viewBox="0 0 220 150" fill="none" stroke="#0E5794" stroke-width="1.5">
+                <rect x="50" y="30" width="100" height="75" rx="3" fill="rgba(14,87,148,0.06)"/>
+                <line x1="50" y1="85" x2="150" y2="85" stroke-dasharray="3 3"/>
+                <path d="M65,100 Q100,60 135,100" stroke="#EF7F1A" stroke-width="2"/>
+                <path d="M70,115 L70,85 M100,115 L100,85 M130,115 L130,85" stroke="#3CA742"/>
+                <text x="55" y="24" fill="#7688A1" font-family="monospace" font-size="9">EXPANSION CHAMBER </text>
+              </svg>
+            </div>
+          </div>
         </article>
 
         <!-- Flash Dryer -->
@@ -135,13 +170,15 @@
                 A high-velocity pneumatic drying system suited to free-flowing or pasty filter cakes requiring rapid moisture removal in seconds. Compact installation footprint with continuous throughput.
               </p>
             </div>
-            <div class="product-deep-diagram">
-              <svg width="220" height="150" viewBox="0 0 220 150" fill="none" stroke="#0E5794" stroke-width="1.5">
-                <path d="M50,135 L50,30 L110,30 L110,135" stroke-width="2"/>
-                <path d="M110,50 L155,50 L155,90 L140,120 L140,140 L125,140" fill="rgba(47,117,182,0.06)"/>
-                <circle cx="50" cy="115" r="8" fill="#EF7F1A"/>
-                <text x="15" y="118" fill="#7688A1" font-family="monospace" font-size="9">FEED </text>
-              </svg>
+            <div class="product-deep-visual">
+              <div class="product-deep-photo-box">
+                <img src="{{ asset('images/flash-dryer.jpg') }}" alt="Industrial Pneumatic Flash Drying System with Disintegrator" class="product-deep-img" loading="lazy" />
+                <div class="product-deep-badge">SYSTEM // DRY-03</div>
+              </div>
+              <div class="product-deep-caption">
+                <span>Pneumatic Flash Column</span>
+                <span>Ultra-Rapid Residence</span>
+              </div>
             </div>
           </div>
 
@@ -156,6 +193,22 @@
               <tr><td>De-agglomeration</td><td>Integrated cage mill or high-shear pin mill disintegrator</td></tr>
             </tbody>
           </table>
+          </div>
+
+          <div class="product-deep-blueprint-drawer">
+            <div class="blueprint-drawer-header">
+              <span class="blueprint-drawer-title">PROCESS SCHEMATIC &bull; HIGH-VELOCITY PNEUMATIC CONDUIT</span>
+              <span class="blueprint-drawer-ref">P&amp;ID // FD-03-REV-03</span>
+            </div>
+            <div class="product-deep-diagram">
+              <svg width="220" height="150" viewBox="0 0 220 150" fill="none" stroke="#0E5794" stroke-width="1.5">
+                <path d="M50,135 L50,30 L110,30 L110,135" stroke-width="2"/>
+                <path d="M110,50 L155,50 L155,90 L140,120 L140,140 L125,140" fill="rgba(47,117,182,0.06)"/>
+                <circle cx="50" cy="115" r="8" fill="#EF7F1A"/>
+                <text x="15" y="118" fill="#7688A1" font-family="monospace" font-size="9">FEED </text>
+              </svg>
+            </div>
+          </div>
         </article>
 
         <!-- Rotary Dryers -->
@@ -167,13 +220,15 @@
                 A rugged rotating-drum cylinder for high-capacity bulk materials, granules and minerals where continuous volume handling and mechanical durability are paramount.
               </p>
             </div>
-            <div class="product-deep-diagram">
-              <svg width="220" height="150" viewBox="0 0 220 150" fill="none" stroke="#0E5794" stroke-width="1.5">
-                <rect x="35" y="45" width="135" height="50" rx="3" transform="rotate(-6 100 70)" fill="rgba(14,87,148,0.06)"/>
-                <circle cx="65" cy="85" r="8" stroke="#EF7F1A"/>
-                <circle cx="140" cy="76" r="8" stroke="#EF7F1A"/>
-                <text x="45" y="32" fill="#7688A1" font-family="monospace" font-size="9">ROTATING DRUM </text>
-              </svg>
+            <div class="product-deep-visual">
+              <div class="product-deep-photo-box">
+                <img src="{{ asset('images/rotary-dryer.jpg') }}" alt="Heavy-Duty Continuous Industrial Rotary Drum Dryer" class="product-deep-img" loading="lazy" />
+                <div class="product-deep-badge">SYSTEM // DRY-04</div>
+              </div>
+              <div class="product-deep-caption">
+                <span>Heavy-Duty Drum Shell</span>
+                <span>Girth Gear &amp; Trunnions</span>
+              </div>
             </div>
           </div>
 
@@ -188,6 +243,22 @@
               <tr><td>Shell Metallurgy</td><td>Wear-resistant alloy steel, boiler quality plates, or SS 304 cladding</td></tr>
             </tbody>
           </table>
+          </div>
+
+          <div class="product-deep-blueprint-drawer">
+            <div class="blueprint-drawer-header">
+              <span class="blueprint-drawer-title">PROCESS SCHEMATIC &bull; INCLINED ROTATING DRUM FLIGHTS</span>
+              <span class="blueprint-drawer-ref">P&amp;ID // RD-04-REV-01</span>
+            </div>
+            <div class="product-deep-diagram">
+              <svg width="220" height="150" viewBox="0 0 220 150" fill="none" stroke="#0E5794" stroke-width="1.5">
+                <rect x="35" y="45" width="135" height="50" rx="3" transform="rotate(-6 100 70)" fill="rgba(14,87,148,0.06)"/>
+                <circle cx="65" cy="85" r="8" stroke="#EF7F1A"/>
+                <circle cx="140" cy="76" r="8" stroke="#EF7F1A"/>
+                <text x="45" y="32" fill="#7688A1" font-family="monospace" font-size="9">ROTATING DRUM </text>
+              </svg>
+            </div>
+          </div>
         </article>
       </div>
 
@@ -203,15 +274,15 @@
                 Liquid flows as a thin turbulent film down heated vertical tube walls under gravity, providing fast, gentle heat transfer and short contact residence time. Sized in single or multi-effect trains with Thermal Vapor Recompression (TVR).
               </p>
             </div>
-            <div class="product-deep-diagram">
-              <svg width="220" height="150" viewBox="0 0 220 150" fill="none" stroke="#0E5794" stroke-width="1.5">
-                <rect x="40" y="20" width="35" height="95" rx="2" fill="rgba(14,87,148,0.06)"/>
-                <line x1="57" y1="20" x2="57" y2="115" stroke-dasharray="2 2"/>
-                <circle cx="120" cy="55" r="30" stroke="#3CA742" fill="rgba(60,167,66,0.06)"/>
-                <path d="M75,35 L90,35 M120,85 L120,135" stroke="#EF7F1A"/>
-                <text x="35" y="14" fill="#7688A1" font-family="monospace" font-size="9">CALANDRIA </text>
-                <text x="100" y="20" fill="#7688A1" font-family="monospace" font-size="9">VAPOR SEPARATOR </text>
-              </svg>
+            <div class="product-deep-visual">
+              <div class="product-deep-photo-box">
+                <img src="{{ asset('images/evaporator-plant.jpg') }}" alt="Multi-Effect Falling Film Evaporator Plant" class="product-deep-img" loading="lazy" />
+                <div class="product-deep-badge">SYSTEM // EVAP-01</div>
+              </div>
+              <div class="product-deep-caption">
+                <span>Multi-Effect TVR Train</span>
+                <span>0.18 Steam Economy</span>
+              </div>
             </div>
           </div>
 
@@ -226,6 +297,24 @@
               <tr><td>Applications</td><td>Dairy whey, milk concentration, fruit juice, pharmaceutical extracts, chemical liquors</td></tr>
             </tbody>
           </table>
+          </div>
+
+          <div class="product-deep-blueprint-drawer">
+            <div class="blueprint-drawer-header">
+              <span class="blueprint-drawer-title">PROCESS SCHEMATIC &bull; THIN-FILM CALANDRIA &amp; VAPOR SEPARATOR</span>
+              <span class="blueprint-drawer-ref">P&amp;ID // FFE-01-REV-03</span>
+            </div>
+            <div class="product-deep-diagram">
+              <svg width="220" height="150" viewBox="0 0 220 150" fill="none" stroke="#0E5794" stroke-width="1.5">
+                <rect x="40" y="20" width="35" height="95" rx="2" fill="rgba(14,87,148,0.06)"/>
+                <line x1="57" y1="20" x2="57" y2="115" stroke-dasharray="2 2"/>
+                <circle cx="120" cy="55" r="30" stroke="#3CA742" fill="rgba(60,167,66,0.06)"/>
+                <path d="M75,35 L90,35 M120,85 L120,135" stroke="#EF7F1A"/>
+                <text x="35" y="14" fill="#7688A1" font-family="monospace" font-size="9">CALANDRIA </text>
+                <text x="100" y="20" fill="#7688A1" font-family="monospace" font-size="9">VAPOR SEPARATOR </text>
+              </svg>
+            </div>
+          </div>
         </article>
 
         <!-- Scraped Surface Evaporator -->
@@ -237,15 +326,15 @@
                 Spring-loaded or centrifugal mechanical scraper blades continuously wipe the heated cylindrical wall, preventing thermal scorching and scaling when concentrating high-viscosity or crystallizing liquors.
               </p>
             </div>
-            <div class="product-deep-diagram">
-              <svg width="220" height="150" viewBox="0 0 220 150" fill="none" stroke="#0E5794" stroke-width="1.5">
-                <rect x="50" y="25" width="60" height="95" rx="3" fill="rgba(14,87,148,0.06)"/>
-                <line x1="80" y1="15" x2="80" y2="130" stroke="#EF7F1A" stroke-width="2"/>
-                <line x1="60" y1="45" x2="100" y2="45" stroke="#3CA742"/>
-                <line x1="60" y1="75" x2="100" y2="75" stroke="#3CA742"/>
-                <line x1="60" y1="105" x2="100" y2="105" stroke="#3CA742"/>
-                <text x="40" y="18" fill="#7688A1" font-family="monospace" font-size="9">ROTOR ASSEMBLY </text>
-              </svg>
+            <div class="product-deep-visual">
+              <div class="product-deep-photo-box">
+                <img src="{{ asset('images/scraped-surface-evaporator.jpg') }}" alt="Vertical Scraped Surface Wiped-Film Evaporator" class="product-deep-img" loading="lazy" />
+                <div class="product-deep-badge">SYSTEM // EVAP-02</div>
+              </div>
+              <div class="product-deep-caption">
+                <span>Wiped-Film Jacketed Cylinder</span>
+                <span>Up to 50,000+ cP Viscosity</span>
+              </div>
             </div>
           </div>
 
@@ -260,6 +349,24 @@
               <tr><td>Duty</td><td>Viscous food pastes, caramel, gelatin, resin concentrates, crystallization</td></tr>
             </tbody>
           </table>
+          </div>
+
+          <div class="product-deep-blueprint-drawer">
+            <div class="blueprint-drawer-header">
+              <span class="blueprint-drawer-title">PROCESS SCHEMATIC &bull; INTERNAL WIPER ROTOR ASSEMBLY</span>
+              <span class="blueprint-drawer-ref">P&amp;ID // SSE-02-REV-02</span>
+            </div>
+            <div class="product-deep-diagram">
+              <svg width="220" height="150" viewBox="0 0 220 150" fill="none" stroke="#0E5794" stroke-width="1.5">
+                <rect x="50" y="25" width="60" height="95" rx="3" fill="rgba(14,87,148,0.06)"/>
+                <line x1="80" y1="15" x2="80" y2="130" stroke="#EF7F1A" stroke-width="2"/>
+                <line x1="60" y1="45" x2="100" y2="45" stroke="#3CA742"/>
+                <line x1="60" y1="75" x2="100" y2="75" stroke="#3CA742"/>
+                <line x1="60" y1="105" x2="100" y2="105" stroke="#3CA742"/>
+                <text x="40" y="18" fill="#7688A1" font-family="monospace" font-size="9">ROTOR ASSEMBLY </text>
+              </svg>
+            </div>
+          </div>
         </article>
 
         <!-- Forced Circulation Evaporator -->
@@ -271,14 +378,15 @@
                 High-capacity axial circulation pumps drive liquor through heat exchanger tubes at high velocities (2–3 m/s), suppressing boiling inside tubes to completely prevent fouling in Zero Liquid Discharge (ZLD) plants.
               </p>
             </div>
-            <div class="product-deep-diagram">
-              <svg width="220" height="150" viewBox="0 0 220 150" fill="none" stroke="#0E5794" stroke-width="1.5">
-                <rect x="35" y="30" width="35" height="75" rx="2" fill="rgba(14,87,148,0.06)"/>
-                <circle cx="115" cy="55" r="28" stroke="#0E5794"/>
-                <path d="M115,83 L115,125 L45,125 L45,105" stroke="#EF7F1A" stroke-width="2"/>
-                <circle cx="80" cy="125" r="9" stroke="#3CA742" fill="#fff"/>
-                <text x="68" y="142" fill="#7688A1" font-family="monospace" font-size="8">AXIAL PUMP </text>
-              </svg>
+            <div class="product-deep-visual">
+              <div class="product-deep-photo-box">
+                <img src="{{ asset('images/insight-evaporator.jpg') }}" alt="Forced Circulation Evaporator and Heat Exchanger Tube Bundle" class="product-deep-img" loading="lazy" />
+                <div class="product-deep-badge">SYSTEM // EVAP-03</div>
+              </div>
+              <div class="product-deep-caption">
+                <span>Axial Recirculation Velocity</span>
+                <span>ZLD &amp; High-Solids Crystallizer</span>
+              </div>
             </div>
           </div>
 
@@ -293,6 +401,23 @@
               <tr><td>Applications</td><td>Effluent ZLD systems, sodium chloride crystallization, multi-salt recovery</td></tr>
             </tbody>
           </table>
+          </div>
+
+          <div class="product-deep-blueprint-drawer">
+            <div class="blueprint-drawer-header">
+              <span class="blueprint-drawer-title">PROCESS SCHEMATIC &bull; AXIAL PUMP RECIRCULATION LOOP</span>
+              <span class="blueprint-drawer-ref">P&amp;ID // FCE-03-REV-05</span>
+            </div>
+            <div class="product-deep-diagram">
+              <svg width="220" height="150" viewBox="0 0 220 150" fill="none" stroke="#0E5794" stroke-width="1.5">
+                <rect x="35" y="30" width="35" height="75" rx="2" fill="rgba(14,87,148,0.06)"/>
+                <circle cx="115" cy="55" r="28" stroke="#0E5794"/>
+                <path d="M115,83 L115,125 L45,125 L45,105" stroke="#EF7F1A" stroke-width="2"/>
+                <circle cx="80" cy="125" r="9" stroke="#3CA742" fill="#fff"/>
+                <text x="68" y="142" fill="#7688A1" font-family="monospace" font-size="8">AXIAL PUMP </text>
+              </svg>
+            </div>
+          </div>
         </article>
       </div>
 
@@ -308,15 +433,15 @@
                 Complete fermentation trains engineered for tight temperature and microbial control, coupled with continuous multi-column distillation towers designed for consistent high-yield alcohol extraction.
               </p>
             </div>
-            <div class="product-deep-diagram">
-              <svg width="220" height="150" viewBox="0 0 220 150" fill="none" stroke="#0E5794" stroke-width="1.5">
-                <rect x="30" y="35" width="45" height="70" rx="6" fill="rgba(60,167,66,0.06)"/>
-                <rect x="100" y="20" width="24" height="95" rx="2" fill="rgba(14,87,148,0.06)"/>
-                <rect x="140" y="25" width="22" height="90" rx="2" fill="rgba(14,87,148,0.06)"/>
-                <path d="M75,65 L100,65 M124,55 L140,55" stroke="#EF7F1A"/>
-                <text x="25" y="24" fill="#7688A1" font-family="monospace" font-size="8">FERMENTER </text>
-                <text x="95" y="14" fill="#7688A1" font-family="monospace" font-size="8">WASH / RECTIFIER </text>
-              </svg>
+            <div class="product-deep-visual">
+              <div class="product-deep-photo-box">
+                <img src="{{ asset('images/fermentation-distillery.jpg') }}" alt="Industrial Fermentation and Multi-Pressure Distillation Plant" class="product-deep-img" loading="lazy" />
+                <div class="product-deep-badge">SYSTEM // BIO-01</div>
+              </div>
+              <div class="product-deep-caption">
+                <span>Continuous Distillation Train</span>
+                <span>Grain &amp; Molasses Substrates</span>
+              </div>
             </div>
           </div>
 
@@ -331,6 +456,24 @@
               <tr><td>Capacity Scale</td><td>Modular designs from 10 KLPD pilot units to 150+ KLPD commercial plants</td></tr>
             </tbody>
           </table>
+          </div>
+
+          <div class="product-deep-blueprint-drawer">
+            <div class="blueprint-drawer-header">
+              <span class="blueprint-drawer-title">PROCESS SCHEMATIC &bull; FERMENTER TO MULTI-COLUMN RECTIFIER</span>
+              <span class="blueprint-drawer-ref">P&amp;ID // FD-01-REV-04</span>
+            </div>
+            <div class="product-deep-diagram">
+              <svg width="220" height="150" viewBox="0 0 220 150" fill="none" stroke="#0E5794" stroke-width="1.5">
+                <rect x="30" y="35" width="45" height="70" rx="6" fill="rgba(60,167,66,0.06)"/>
+                <rect x="100" y="20" width="24" height="95" rx="2" fill="rgba(14,87,148,0.06)"/>
+                <rect x="140" y="25" width="22" height="90" rx="2" fill="rgba(14,87,148,0.06)"/>
+                <path d="M75,65 L100,65 M124,55 L140,55" stroke="#EF7F1A"/>
+                <text x="25" y="24" fill="#7688A1" font-family="monospace" font-size="8">FERMENTER </text>
+                <text x="95" y="14" fill="#7688A1" font-family="monospace" font-size="8">WASH / RECTIFIER </text>
+              </svg>
+            </div>
+          </div>
         </article>
 
         <!-- Fuel Ethanol Plants -->
@@ -342,15 +485,15 @@
                 End-to-end fuel-grade anhydrous ethanol production complexes — from feedstock slurry milling, continuous fermentation, multi-pressure distillation, through to Molecular Sieve Dehydration Units (MSDU).
               </p>
             </div>
-            <div class="product-deep-diagram">
-              <svg width="220" height="150" viewBox="0 0 220 150" fill="none" stroke="#0E5794" stroke-width="1.5">
-                <rect x="25" y="40" width="35" height="60" rx="4" fill="rgba(14,87,148,0.06)"/>
-                <rect x="75" y="25" width="22" height="85" rx="2"/>
-                <rect x="115" y="30" width="22" height="80" rx="2"/>
-                <rect x="155" y="45" width="35" height="55" rx="2" stroke="#3CA742" fill="rgba(60,167,66,0.06)"/>
-                <path d="M60,65 L75,65 M97,60 L115,60 M137,65 L155,65" stroke="#EF7F1A"/>
-                <text x="150" y="35" fill="#3CA742" font-family="monospace" font-size="8">MSDU DEHYDRATION </text>
-              </svg>
+            <div class="product-deep-visual">
+              <div class="product-deep-photo-box">
+                <img src="{{ asset('images/fuel-ethanol-plant.jpg') }}" alt="Turnkey Fuel Ethanol Refinery and MSDU Dehydration Towers" class="product-deep-img" loading="lazy" />
+                <div class="product-deep-badge">SYSTEM // BIO-02</div>
+              </div>
+              <div class="product-deep-caption">
+                <span>99.8% Anhydrous Fuel Ethanol</span>
+                <span>Turnkey MSDU Dehydration</span>
+              </div>
             </div>
           </div>
 
@@ -365,6 +508,24 @@
               <tr><td>Project Delivery</td><td>Complete turnkey: design, equipment fabrication, erection, instrumentation, handover</td></tr>
             </tbody>
           </table>
+          </div>
+
+          <div class="product-deep-blueprint-drawer">
+            <div class="blueprint-drawer-header">
+              <span class="blueprint-drawer-title">PROCESS SCHEMATIC &bull; MSDU MOLECULAR SIEVE DEHYDRATION</span>
+              <span class="blueprint-drawer-ref">P&amp;ID // MSDU-02-REV-02</span>
+            </div>
+            <div class="product-deep-diagram">
+              <svg width="220" height="150" viewBox="0 0 220 150" fill="none" stroke="#0E5794" stroke-width="1.5">
+                <rect x="25" y="40" width="35" height="60" rx="4" fill="rgba(60,167,66,0.06)"/>
+                <rect x="75" y="25" width="22" height="85" rx="2"/>
+                <rect x="115" y="30" width="22" height="80" rx="2"/>
+                <rect x="155" y="45" width="35" height="55" rx="2" stroke="#3CA742" fill="rgba(60,167,66,0.06)"/>
+                <path d="M60,65 L75,65 M97,60 L115,60 M137,65 L155,65" stroke="#EF7F1A"/>
+                <text x="150" y="35" fill="#3CA742" font-family="monospace" font-size="8">MSDU DEHYDRATION </text>
+              </svg>
+            </div>
+          </div>
         </article>
       </div>
 
@@ -381,7 +542,7 @@
         </p>
         <div class="cta-band__actions">
           <a href="{{ route('contact') }}" class="btn btn--primary btn--magnetic">Request Engineering Sizing</a>
-          <a href="{{ route('gallery') }}" class="btn btn--ghost-white">View Installed Plant Gallery →</a>
+          <a href="{{ route('gallery') }}" class="btn btn--ghost-white">View Installed Plant Gallery &rarr;</a>
         </div>
       </div>
     </div>

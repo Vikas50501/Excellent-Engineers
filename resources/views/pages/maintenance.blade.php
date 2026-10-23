@@ -37,6 +37,13 @@
               <li class="bullet-item"><span class="bullet-item__icon"></span><span><strong>Regulatory Compliance:</strong> Clean-In-Place (CIP) audit validating zero cross-contamination.</span></li>
             </ul>
           </div>
+          <div class="duotone-photo crop-marks" style="height: 280px; margin-top: 1.5rem;">
+            <img src="{{ asset('images/quality-inspection.jpg') }}" alt="Senior Inspection Engineer Auditing Industrial Pressure Vessel" />
+          </div>
+          <div class="snapshot__caption">
+            <span>ON-SITE PLANT AUDIT</span>
+            <span>ULTRASONIC NDT &amp; CALIBRATION</span>
+          </div>
         </div>
       </div>
     </div>
@@ -191,31 +198,55 @@
 
       <div class="product-preview-grid">
         <div class="spec-sheet-card reveal">
+          <div class="spec-sheet-card__media">
+            <img src="{{ asset('images/spares-atomizer.jpg') }}" alt="Precision Rotary Atomizer Wheels and Swirl Nozzles" class="spec-sheet-card__img" loading="lazy" />
+            <div class="spec-sheet-card__badge">OEM // ATOMIZERS</div>
+          </div>
           <h3 class="spec-sheet-card__title">Atomizers &amp; Nozzles</h3>
           <p class="spec-sheet-card__desc">Rotary atomizer wheels, tungsten carbide nozzle inserts, swirl chambers, and balanced high-speed spindle assemblies for Spray Dryers.</p>
         </div>
 
         <div class="spec-sheet-card reveal stagger-1">
+          <div class="spec-sheet-card__media">
+            <img src="{{ asset('images/scraped-surface-evaporator.jpg') }}" alt="Scraper Blades and Dynamic Rotor Assembly" class="spec-sheet-card__img" loading="lazy" />
+            <div class="spec-sheet-card__badge">OEM // ROTORS</div>
+          </div>
           <h3 class="spec-sheet-card__title">Scraper Blades &amp; Rotors</h3>
           <p class="spec-sheet-card__desc">PTFE, PEEK, and stainless scraper blade inserts, springs, and precision dynamic-balanced drive shafts for Scraped Surface Evaporators.</p>
         </div>
 
         <div class="spec-sheet-card reveal stagger-2">
+          <div class="spec-sheet-card__media">
+            <img src="{{ asset('images/spares-pumps-seals.jpg') }}" alt="Mechanical Seals and Axial Circulation Pumps" class="spec-sheet-card__img" loading="lazy" />
+            <div class="spec-sheet-card__badge">OEM // SEALS &amp; PUMPS</div>
+          </div>
           <h3 class="spec-sheet-card__title">Circulation Pumps &amp; Seals</h3>
           <p class="spec-sheet-card__desc">Axial flow impellers, high-temperature silicon carbide mechanical seals, and shaft sleeves for Forced Circulation Evaporators.</p>
         </div>
 
         <div class="spec-sheet-card reveal">
+          <div class="spec-sheet-card__media">
+            <img src="{{ asset('images/insight-evaporator.jpg') }}" alt="SS 304/316 Seamless Heat Transfer Tubes and Gaskets" class="spec-sheet-card__img" loading="lazy" />
+            <div class="spec-sheet-card__badge">OEM // TUBES</div>
+          </div>
           <h3 class="spec-sheet-card__title">Tubes &amp; Sanitary Gaskets</h3>
           <p class="spec-sheet-card__desc">SS 304/316 seamless heat transfer tubes, EPDM/Viton/PTFE food-grade sanitary gaskets, and expanded tube ferrules.</p>
         </div>
 
         <div class="spec-sheet-card reveal stagger-1">
+          <div class="spec-sheet-card__media">
+            <img src="{{ asset('images/insight-dryer.jpg') }}" alt="PTFE Membrane Filter Bags and Solenoid Valves" class="spec-sheet-card__img" loading="lazy" />
+            <div class="spec-sheet-card__badge">OEM // FILTRATION</div>
+          </div>
           <h3 class="spec-sheet-card__title">Filtration &amp; Cyclones</h3>
           <p class="spec-sheet-card__desc">Anti-static PTFE membrane filter bags, cage retainers, pulse-jet solenoid valves, and wear-resistant cyclone cone liners.</p>
         </div>
 
         <div class="spec-sheet-card reveal stagger-2">
+          <div class="spec-sheet-card__media">
+            <img src="{{ asset('images/quality-inspection.jpg') }}" alt="Calibrated Sensors and Industrial Transmitters" class="spec-sheet-card__img" loading="lazy" />
+            <div class="spec-sheet-card__badge">OEM // SENSORS</div>
+          </div>
           <h3 class="spec-sheet-card__title">Sensors &amp; Instrumentation</h3>
           <p class="spec-sheet-card__desc">RTD PT-100 temperature sensors, differential pressure transmitters, flame sensors, and safety interlock relays.</p>
         </div>

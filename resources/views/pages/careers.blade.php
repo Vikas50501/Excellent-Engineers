@@ -59,12 +59,12 @@
       </div>
 
       <div class="faq-accordion reveal">
-        <div class="faq-item open">
-          <button class="faq-header" type="button" aria-expanded="true">
+        <div class="faq-item">
+          <button class="faq-header" type="button" aria-expanded="false">
             <span class="faq-question">Design Engineer – Mechanical / Process</span>
             <span class="faq-icon">+</span>
           </button>
-          <div class="faq-body" style="max-height: 300px;">
+          <div class="faq-body">
             <p><strong>Location:</strong> Moi, Khed, Pune Works | <strong>Experience:</strong> 2–5 Years</p>
             <p><strong>Key Responsibilities:</strong> Mass and energy balance calculations for spray dryers and evaporators; sizing heat exchangers, cyclones, and fans; preparing mechanical GA drawings and P&amp;IDs in AutoCAD and 3D modeling software.</p>
             <a href="#apply-form" class="btn btn--primary" style="margin-top: 0.75rem; padding: 0.5rem 1.25rem; font-size: 0.8125rem;">Apply for this Role</a>

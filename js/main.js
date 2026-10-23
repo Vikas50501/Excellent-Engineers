@@ -238,17 +238,59 @@
   }
 
   /* ================================================================
-     6. FAQ ACCORDION
+     6. FAQ & CAREER ROLE ACCORDIONS (Fully Togglable Open & Close)
   ================================================================ */
   function initFaq() {
-    qsa('.faq-item').forEach(item => {
-      const header = qs('.faq-header', item);
-      if (!header) return;
+    const accordions = qsa('.faq-accordion');
+    if (!accordions.length) return;
 
-      header.addEventListener('click', () => {
-        const wasOpen = item.classList.contains('open');
-        qsa('.faq-item').forEach(i => i.classList.remove('open'));
-        if (!wasOpen) item.classList.add('open');
+    accordions.forEach(accordion => {
+      const items = qsa('.faq-item', accordion);
+
+      items.forEach(item => {
+        const header = qs('.faq-header', item);
+        const body = qs('.faq-body', item);
+        if (!header || !body) return;
+
+        // Clean any lingering inline max-height attribute
+        body.style.removeProperty('max-height');
+
+        header.addEventListener('click', (e) => {
+          e.preventDefault();
+
+          const isOpen = item.classList.contains('open');
+
+          // Close all items in this accordion
+          items.forEach(otherItem => {
+            otherItem.classList.remove('open');
+            const otherBtn = qs('.faq-header', otherItem);
+            if (otherBtn) otherBtn.setAttribute('aria-expanded', 'false');
+            const otherBody = qs('.faq-body', otherItem);
+            if (otherBody) otherBody.style.removeProperty('max-height');
+          });
+
+          // If it was closed, open it now! (If it was open, it stays closed)
+          if (!isOpen) {
+            item.classList.add('open');
+            header.setAttribute('aria-expanded', 'true');
+          }
+        });
+      });
+    });
+
+    // Also wire any 'Apply for this Role' buttons to pre-select position
+    qsa('.apply-role-btn, a[href="#apply-form"]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const role = btn.dataset.role;
+        const select = qs('#position');
+        if (role && select) {
+          for (let opt of select.options) {
+            if (opt.value.toLowerCase().includes(role.toLowerCase()) || opt.text.toLowerCase().includes(role.toLowerCase())) {
+              select.value = opt.value;
+              break;
+            }
+          }
+        }
       });
     });
   }
