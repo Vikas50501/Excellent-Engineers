@@ -21,24 +21,27 @@ class PageController extends Controller
         $productFamilies = [
             [
                 'id' => 'dryers',
-                'num' => 'FAMILY // 01',
+                'num' => 'SYSTEM // 01',
                 'title' => 'Industrial Dryers',
+                'image' => 'images/spray-dryer-plant.jpg',
                 'desc' => 'Spray, Fluid Bed, Flash & Rotary Dryers built for uniform particle size distribution, precise moisture control, and energy-conserving airflow handling.',
                 'subproducts' => '4 Equipment Lines',
                 'link' => route('products') . '#tab-dryers'
             ],
             [
                 'id' => 'evaporators',
-                'num' => 'FAMILY // 02',
+                'num' => 'SYSTEM // 02',
                 'title' => 'Evaporators',
+                'image' => 'images/evaporator-plant.jpg',
                 'desc' => 'Falling Film, Scraped Surface & Forced Circulation Evaporators designed for thermal economy, low residence degradation, and non-clogging high-solids concentration.',
                 'subproducts' => '3 Equipment Lines',
                 'link' => route('products') . '#tab-evaporators'
             ],
             [
                 'id' => 'biotech',
-                'num' => 'FAMILY // 03',
+                'num' => 'SYSTEM // 03',
                 'title' => 'Bio-Technology Plants',
+                'image' => 'images/fermentation-distillery.jpg',
                 'desc' => 'Fermentation, Distillation & Fuel Ethanol Plants engineered for maximum conversion yield, continuous regulatory compliance, and thermal energy integration.',
                 'subproducts' => 'Turnkey Systems',
                 'link' => route('products') . '#tab-biotech'

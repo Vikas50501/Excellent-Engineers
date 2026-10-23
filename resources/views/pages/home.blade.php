@@ -170,41 +170,15 @@
       <div class="product-preview-grid">
         @foreach($productFamilies as $i => $fam)
           <article class="spec-sheet-card reveal {{ $i > 0 ? 'stagger-' . $i : '' }}">
-            <div class="spec-sheet-card__diagram">
-              @if($fam['id'] === 'dryers')
-                <svg width="100%" height="110" viewBox="0 0 200 110" fill="none" stroke="#0E5794" stroke-width="1.5">
-                  <path d="M30,20 L80,20 L80,60 L55,95 L55,105 L45,105 L30,60 Z" fill="rgba(14,87,148,0.05)"/>
-                  <line x1="80" y1="35" x2="115" y2="35"/>
-                  <path d="M115,25 L140,25 L140,65 L128,88 L128,100 L115,65 Z" fill="rgba(47,117,182,0.05)"/>
-                  <path d="M140,40 L175,40 L175,90" stroke-dasharray="3 3"/>
-                  <circle cx="55" cy="20" r="5" stroke="#EF7F1A"/>
-                </svg>
-              @elseif($fam['id'] === 'evaporators')
-                <svg width="100%" height="110" viewBox="0 0 200 110" fill="none" stroke="#0E5794" stroke-width="1.5">
-                  <rect x="25" y="20" width="30" height="70" rx="2" fill="rgba(14,87,148,0.05)"/>
-                  <line x1="40" y1="20" x2="40" y2="90" stroke-dasharray="2 2"/>
-                  <rect x="75" y="25" width="30" height="65" rx="2" fill="rgba(14,87,148,0.05)"/>
-                  <line x1="90" y1="25" x2="90" y2="90" stroke-dasharray="2 2"/>
-                  <circle cx="150" cy="50" r="28" stroke="#3CA742" fill="rgba(60,167,66,0.05)"/>
-                  <path d="M55,30 L75,30 M105,35 L125,45" stroke="#EF7F1A"/>
-                </svg>
-              @else
-                <svg width="100%" height="110" viewBox="0 0 200 110" fill="none" stroke="#0E5794" stroke-width="1.5">
-                  <rect x="30" y="30" width="45" height="60" rx="6" fill="rgba(60,167,66,0.05)"/>
-                  <path d="M52,15 L52,30 M42,48 L62,48 M42,62 L62,62" stroke="#3CA742"/>
-                  <rect x="110" y="15" width="26" height="85" rx="2" fill="rgba(14,87,148,0.05)"/>
-                  <line x1="110" y1="35" x2="136" y2="35"/>
-                  <line x1="110" y1="55" x2="136" y2="55"/>
-                  <line x1="110" y1="75" x2="136" y2="75"/>
-                  <path d="M75,60 L110,60" stroke="#EF7F1A"/>
-                </svg>
-              @endif
+            <div class="spec-sheet-card__media">
+              <img src="{{ asset($fam['image']) }}" alt="{{ $fam['title'] }} - Excellent Dry-Tech" class="spec-sheet-card__img" loading="lazy" />
+              <div class="spec-sheet-card__badge">{{ $fam['num'] }}</div>
             </div>
             <h3 class="spec-sheet-card__title">{{ $fam['title'] }}</h3>
             <p class="spec-sheet-card__desc">{{ $fam['desc'] }}</p>
             <div class="spec-sheet-card__footer">
               <span class="text-muted" style="font-size: 0.8125rem;">{{ $fam['subproducts'] }}</span>
-              <a href="{{ $fam['link'] }}" class="spec-sheet-link">View {{ $fam['title'] }} →</a>
+              <a href="{{ $fam['link'] }}" class="spec-sheet-link">View {{ $fam['title'] }} &rarr;</a>
             </div>
           </article>
         @endforeach
